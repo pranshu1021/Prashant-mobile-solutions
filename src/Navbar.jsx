@@ -15,7 +15,8 @@ function Navbar(){
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#">Courses</a>
-    <a href="#">Contact</a>
+    <a href="#">Contact Us</a>
+    
 </nav>
 
 
