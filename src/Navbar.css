@@ -77,3 +77,35 @@
     width: 100%;
 }
 
+
+.login-btn , .signup-btn {
+    border: none;
+    border-radius: 5px;
+
+    padding:10px;
+    height:10px;
+    background-color: rgba(33, 82, 243, 0.977);
+    color:white;
+    width:5px;
+    text-decoration: none;
+    margin:5px;
+
+}
+
+.nav-buttons a {
+    display:inline-block;
+transition: transform 0.3s ease;
+width:auto;
+height:auto;
+/*transition:background-color 0.3s ease;*/
+
+}
+
+.nav-buttons a:hover{
+    transform:translateY(1.1px) scale(1.05);
+   /* background-color: rgb(4, 4, 109);*/
+    
+}
+.navbar{
+    border-bottom:1px  solid black;
+}
