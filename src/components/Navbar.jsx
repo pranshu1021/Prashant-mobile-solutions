@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import Logo from "./assets/pms-imgs/pms-logo.png"
+import Logo from "../assets/pms-imgs/pms-logo.png"
 function Navbar(){
     return ( 
         <header className = "navbar">
