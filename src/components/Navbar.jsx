@@ -23,7 +23,7 @@ function Navbar(){
 
 <div className="nav-buttons">
         <a className="login-btn" href="#login">Login</a>
-        <a className="signup-btn" href="#login">Sign Up</a>
+        <a className="signup-btn" href="#signup">Sign Up</a>
 </div>
 </div>
 </header>

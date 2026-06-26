@@ -10,7 +10,11 @@
     top:0;
     width: 100%;
      z-index:1000;
+     backdrop-filter: blur (150px);
+     background-color:transparent;
+     background:rgb(202, 201, 201,0.7);
 }
+
 
 .nav-container{
     max-width: 1500px;
@@ -50,8 +54,8 @@
 .nav_links a{
     text-decoration: none;
     color: black;
-    font-size: 0.98rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     
     position: relative;
     transition: .3s;
