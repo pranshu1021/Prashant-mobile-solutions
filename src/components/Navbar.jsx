@@ -8,7 +8,7 @@ function Navbar(){
     
     <div className="brand">
     <img src={Logo} alt="Prashant Mobile Solutions Logo" className="logo"/>
-    <h2>Prashant Mobile Solutions</h2>
+    <h2>PMS</h2>
     </div>
 
 <nav className="nav_links">
