@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.hero{
+    margin-top: 20px;
+    padding:200px;
+    background-color: red;
+   display:flex;
+   align-items: flex-end;
+   width:100%;
+   min-height: 100vh;
+   align-items: first baseline;
+}
+.hero-Container{
+    display:flex;
+   
+    align-items:center;
+    
+}
+h2{
+    color:rgb(17, 17, 114);
+    font-size:2rem;
+    font-weight:600;
+   display:flex;
+   justify-content: center;
+}
+p{
+    max-width:500px;
+    
+}
+
+.hero-Image{
+    width:50px;
+    height:50px;
+}
