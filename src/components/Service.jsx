@@ -3,7 +3,7 @@ import { SiAuth0 } from "react-icons/si";
 
 function Service(){
     return (
-<div className="card">
+<div className="service-card">
 
 <div className="image">
   <SiAuth0 size={35}/>
