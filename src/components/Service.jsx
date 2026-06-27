@@ -6,7 +6,7 @@ function Service(){
 <div className="service-card">
 
 <div className="image">
-  <SiAuth0 size={35}/>
+  
 
 </div>
 <div className="content">
