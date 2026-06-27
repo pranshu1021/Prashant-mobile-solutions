@@ -11,7 +11,7 @@
    align-items: center;
    justify-content: center;
    width:100%;
-   min-height: calc(100vh - 80px);
+   min-height: 650px;
    align-items: first baseline;
 }
 .hero-Container{

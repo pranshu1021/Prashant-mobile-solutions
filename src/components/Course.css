@@ -5,19 +5,42 @@
 
 .Mobile-card{
     margin-left:50px;
-    width:400px;
-    border-left: 3px solid  rgb(42, 42, 234);
+   
+    border-left: 5px solid  rgb(42, 42, 234);
    box-sizing: border-box;
- padding: 10px;
+ padding: 15px;
+        height: auto;
+    width: 420px;
+    margin-bottom: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+ box-shadow:5px 10px 13px rgba(0,0,0,0.5);
+ transition: 0.3s;
+}
+.Mobile-card:hover{
+    transform: scale(1.05);
 }
 
-.image{
+/* .image{
     font-size: 20px;
     height:10px;
     margin-left:0px;
     border-radius:10px;
     
-}
+} */
+ .image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .image span{
+    border: 1px solid blue;
+    padding: 4px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 255, 0.11);
+ }
 
 content h2 {
     font-weight: 600;
@@ -42,7 +65,7 @@ line-height: 2;
     
 }
 .enroll-butn{
-    padding: 15px;
+    padding: 10px;
     margin:10px;
     background-color: rgb(62, 62, 239);
     color:white;
@@ -50,6 +73,7 @@ line-height: 2;
     border-radius : 10px;
     text-align:center;
     width:85%;
+    align-self: baseline;
 }
 .Content-desc-condition{
     color:green;
@@ -71,5 +95,36 @@ line-height: 2;
 
 .cards{
     display: flex;
-   
+   margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.one{
+    background-color: rgb(62, 62, 239);
+    transition: background-color 0.3s;
+}
+.one:hover{
+background-color: rgb(62, 62, 239,0.7);
+}
+.green{
+    border-left: solid 5px rgb(65, 100, 65)
+}
+.second{
+    background-color: rgb(65, 100, 65);
+    transition: background-color 0.3s;
+}
+.second:hover{
+    background-color: rgb(65, 100, 65,0.7);
+}
+.purple{
+    border-left: solid 5px rgb(141, 35, 141);
+}
+.third{
+    background-color:rgb(141, 35, 141) ;
+    transition: background-color 0.3s;
+}
+.third:hover{
+    background-color: rgb(141, 35, 141,0.7);
 }

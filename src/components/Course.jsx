@@ -8,9 +8,10 @@ function Course() {
     <div>
 
         <div className="cards">
-      <div className="Mobile-card">
+      <div className="Mobile-card blue">
         <div className="image">
-          <GiVintageRobot />
+          <GiVintageRobot scale={30}  />
+          <span>Beginner</span>
         </div>
 
         <div className="content">
@@ -32,19 +33,20 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn">Enroll Now</div>
+        <div className="enroll-butn one">Enroll Now</div>
       </div>
 
 
-      <div className="Mobile-card">
+      <div className="Mobile-card green">
         <div className="image">
-          <GiAutoRepair />
+          <GiAutoRepair scale={25} />
+          <span>Advanced</span>
         </div>
 
         <div className="content">
           <h2>Advanced Android Repair</h2>
           <p>
-            {" "}
+         
             Advanced chip-level repairs,eMMC/CPU programming,board
             tracking,software issues and advanced troubleshooting techniques.
           </p>
@@ -60,13 +62,14 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn">Enroll Now</div>
+        <div className="enroll-butn second">Enroll Now</div>
       </div>
 
 
-      <div className="Mobile-card">
+      <div className="Mobile-card purple">
         <div className="image">
-          <FaApple />
+          <FaApple scale={25}/>
+          <span>Advanced</span>
         </div>
 
         <div className="content">
@@ -87,7 +90,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn">Enroll Now</div>
+        <div className="enroll-butn third">Enroll Now</div>
       </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ function App(){
        <Hero/>
        
       <Services/>
-      <Courses/>
+      {/* <Courses/> */}
       <Course/>
     </div>
     )
