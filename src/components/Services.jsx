@@ -4,22 +4,30 @@ import { RiCheckboxCircleLine } from "react-icons/ri";
 import { SiAuth0 } from "react-icons/si";
 import { FiAward } from "react-icons/fi";
 import { MdCastForEducation } from "react-icons/md";
+import './Services.css';
 
 const details=[
-  {svg:<SiAuth0 size={35}/>,heading:"Certified Technicians",
+  {svg:<SiAuth0 size={30}/>,heading:"Certified Technicians",
   p:"Industry-trained & Verified experts"},
   
-  {svg:<RiCheckboxCircleLine />,heading:"Genuine Spare Parts",p:"Authentic parts for lasting performance."},
+  {svg:<RiCheckboxCircleLine size={30} />,heading:"Genuine Spare Parts",p:"Authentic parts for lasting long."},
   
-  { svg:<MdCastForEducation />,heading:"Practical Training",p:"Hands-on learning with real devices."},
+  { svg:<MdCastForEducation size={30} />,heading:"Practical Training",p:"Hands-on learning with real devices."},
   
-  { svg:<FiAward />,heading:"Transparent Pricing",p:"No hidden charges, honest estimates."}
+  { svg:<FiAward size={30} />,heading:"Transparent Pricing",p:"No hidden charges, honest estimates."}
   ];
 
 function Services (){
   return (
-<Service/>
+    <div className='Services-container'>
+{
+  details.map((item , index)=>( 
+    <Service key={index} svg = {item.svg} heading = {item.heading} p = {item.p}/>
+  )
   )
 }
 
+  </div>
+  )
+}
 export default Services;

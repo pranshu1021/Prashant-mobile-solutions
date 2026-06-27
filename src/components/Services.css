@@ -1,0 +1,9 @@
+.Services-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(231, 228, 228);
+}

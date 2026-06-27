@@ -1,17 +1,21 @@
 import './Service.css'
 import { SiAuth0 } from "react-icons/si";
 
-function Service(){
+function Service({svg,heading,p}){
     return (
 <div className="service-card">
 
 <div className="image">
-  
+  {
+    svg
+  }
 
 </div>
 <div className="content">
-<h4>Certified Technicians</h4>
-<p>Industry-trained & Verified experts</p>
+<h4>{heading}</h4>
+<p>
+    {p}
+</p>
 </div>
 </div>
     )
