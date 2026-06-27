@@ -4,8 +4,8 @@ import Navbar from './components/Navbar.jsx'
 
 
 import Services from './components/Services.jsx'
-
-
+import Courses from './components/Courses.jsx'
+import Course from './components/Course.jsx'
 function App(){
     return( 
     <div>
@@ -14,6 +14,8 @@ function App(){
        <Hero/>
        
       <Services/>
+      <Courses/>
+      <Course/>
     </div>
     )
 }
