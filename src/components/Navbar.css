@@ -5,14 +5,17 @@
 }
 
 /* navbar */
-.navbar{
+.navbar {
     position: sticky;
-    top:0;
-    width: 100%;
-     z-index:1000;
-     backdrop-filter: blur (150px);
-     background-color:transparent;
-     background:rgb(202, 201, 201,0.7);
+    top: 1%;
+    left: 2.5%;
+    right: 2.5%;
+    width: 95%;
+    border-radius: 80px;
+    z-index: 1000;
+    backdrop-filter: blur(150px);
+    /* background: rgb(202, 201, 201, 0.7); */
+    background: rgb(241, 241, 241);
 }
 
 

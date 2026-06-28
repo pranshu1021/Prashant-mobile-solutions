@@ -1,6 +1,5 @@
 import "./Course.css";
-import { GiVintageRobot } from "react-icons/gi";
-import { GiAutoRepair } from "react-icons/gi";
+import { GiVintageRobot, GiAutoRepair } from "react-icons/gi";
 import { FaApple } from "react-icons/fa";
 
 function Course() {
@@ -9,8 +8,8 @@ function Course() {
 
         <div className="cards">
       <div className="Mobile-card blue">
-        <div className="image">
-          <GiVintageRobot scale={30}  />
+        <div className="image" aria-hidden="true">
+          <GiVintageRobot size={30} />
           <span>Beginner</span>
         </div>
 
@@ -33,13 +32,13 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn one">Enroll Now</div>
+        <button type="button" className="enroll-butn one">Enroll Now</button>
       </div>
 
 
       <div className="Mobile-card green">
-        <div className="image">
-          <GiAutoRepair scale={25} />
+        <div className="image" aria-hidden="true">
+          <GiAutoRepair size={25} />
           <span>Advanced</span>
         </div>
 
@@ -62,13 +61,13 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn second">Enroll Now</div>
+        <button type="button" className="enroll-butn second">Enroll Now</button>
       </div>
 
 
       <div className="Mobile-card purple">
-        <div className="image">
-          <FaApple scale={25}/>
+        <div className="image" aria-hidden="true">
+          <FaApple size={25} />
           <span>Advanced</span>
         </div>
 
@@ -90,7 +89,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <div className="enroll-butn third">Enroll Now</div>
+        <button type="button" className="enroll-butn third">Enroll Now</button>
       </div>
       </div>
     </div>
