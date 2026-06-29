@@ -21,11 +21,11 @@ function App() {
       <Hero />
       <Services />
       <Course />
-      <Enquiry/>
+   
       <Footer/>
       </ClickSpark>
       
-
+   <Enquiry/>
     </div>
   )
 }

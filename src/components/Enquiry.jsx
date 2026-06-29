@@ -6,6 +6,8 @@ function Enquiry() {
     <div>
           <div className='Enquiry-form'>
             <form action="">
+              <div className='Enquiry-item'>
+                <h1>Enquiry-Form</h1>
                 <label id='username' htmlFor=""></label>
                 <input type="name" name="username" id="username" placeholder='Enter your name' />
                 
@@ -13,14 +15,14 @@ function Enquiry() {
                 <input type="email" name='email' id='email' placeholder='Enter your email' />
 
                 <select name="course" id="course">
-                  <input type="couse" placeholder='Choose any course' />
+                  
                   <option value="Iphone reparining">Iphone reparining</option>
                   <option value="Mobile reparining">Mobile reparining</option>
                   <option value="Hardware reparining">Hardware reparining</option>
                 </select>
 
                 <button>Submit</button>
-                
+                </div>
             </form>
         </div>
     </div>
