@@ -1,22 +1,26 @@
 import './App.css'
 import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
-
-
 import Services from './components/Services.jsx'
-import Courses from './components/Courses.jsx'
 import Course from './components/Course.jsx'
-function App(){
-    return( 
+import ClickSpark from './components/ClickSpark.jsx'
+function App() {
+  return (
     <div>
-       
-       <Navbar/> 
-       <Hero/>
-       
-      <Services/>
-      {/* <Courses/> */}
-      <Course/>
+        <ClickSpark
+  sparkColor="#2563eb"
+  sparkSize={12}
+  sparkRadius={18}
+  sparkCount={10}
+  duration={500}
+>
+      <Navbar />
+      <Hero />
+      <Services />
+      <Course />
+      </ClickSpark>
     </div>
-    )
+  )
 }
+
 export default App;

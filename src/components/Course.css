@@ -1,14 +1,25 @@
+/* ===========================
+   Variables
+=========================== */
+
 :root {
   --bg: #f8fafc;
   --card: #ffffff;
   --border: rgba(15, 23, 42, 0.08);
+
   --text: #0f172a;
   --muted: #475569;
+
   --blue: #3b82f6;
   --green: #22c55e;
   --purple: #a855f7;
+
   --shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
 }
+
+/* ===========================
+   Global
+=========================== */
 
 * {
   margin: 0;
@@ -16,23 +27,34 @@
   box-sizing: border-box;
 }
 
+/* ===========================
+   Cards Container
+=========================== */
+
 .cards {
+  max-width: 1240px;
+  margin: 0 auto 40px;
+  padding: 80px 14px;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 28px;
-  max-width: 1240px;
-  margin: 70px auto 40px;
-  padding: 0 14px;
 }
+
+/* ===========================
+   Card
+=========================== */
 
 .Mobile-card {
   position: relative;
+
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 32px;
   overflow: hidden;
+
   box-shadow: var(--shadow);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  transition: 0.28s ease;
 }
 
 .Mobile-card:hover {
@@ -40,17 +62,27 @@
   box-shadow: 0 34px 90px rgba(15, 23, 42, 0.16);
 }
 
+/* Light gradient overlay */
+
 .Mobile-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 25%);
+
+  background: radial-gradient(
+    circle at top left,
+    rgba(59, 130, 246, 0.12),
+    transparent 25%
+  );
+
   pointer-events: none;
 }
 
-.Mobile-card.blue::before,
-.Mobile-card.green::before,
-.Mobile-card.purple::before {
+/* ===========================
+   Top Color Strip
+=========================== */
+
+.Mobile-card::before {
   content: "";
   display: block;
   height: 7px;
@@ -68,11 +100,16 @@
   background: linear-gradient(90deg, #8b5cf6, #c084fc);
 }
 
+/* ===========================
+   Header
+=========================== */
+
 .image {
+  padding: 28px 28px 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 28px 0;
   gap: 14px;
 }
 
@@ -82,12 +119,15 @@
   color: var(--text);
 }
 
+/* Badge */
+
 .image span {
   padding: 10px 16px;
   border-radius: 999px;
+
   font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-weight: bold;
+
   background: rgba(59, 130, 246, 0.12);
   color: #1d4ed8;
 }
@@ -102,37 +142,47 @@
   color: #7c3aed;
 }
 
+/* ===========================
+   Content
+=========================== */
+
 .content {
   padding: 22px 28px 26px;
 }
 
 .content h2 {
+  margin-bottom: 14px;
+
   color: var(--text);
   font-size: 1.72rem;
   line-height: 1.15;
-  margin-bottom: 14px;
 }
 
 .content p {
+  margin-bottom: 22px;
+
   color: var(--muted);
   line-height: 1.78;
-  margin-bottom: 22px;
 }
+
+/* ===========================
+   Information Rows
+=========================== */
 
 .Content-description,
 .Content-desc-eligibility {
+  margin-bottom: 14px;
+
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px 18px;
   align-items: center;
-  margin-bottom: 14px;
 }
 
 .Content-description strong,
 .Content-desc-eligibility strong {
-  font-size: 0.98rem;
-  font-weight: 700;
   color: var(--text);
+  font-size: 0.98rem;
 }
 
 .Content-description span,
@@ -141,30 +191,46 @@
   font-size: 0.95rem;
 }
 
+/* ===========================
+   Condition Badge
+=========================== */
+
 .Content-desc-condition {
   display: inline-flex;
   align-items: center;
+
   padding: 12px 16px;
+  margin-bottom: 20px;
+
   border-radius: 999px;
+
   background: rgba(34, 197, 94, 0.11);
   color: #15803d;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: bold;
 }
+
+/* ===========================
+   Buttons
+=========================== */
 
 .enroll-butn {
   display: block;
+
   width: calc(100% - 52px);
   margin: 0 26px 26px;
   padding: 16px 0;
+
   border: none;
   border-radius: 18px;
+
   font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: bold;
+  color: white;
+
   background: linear-gradient(90deg, #2563eb, #3b82f6);
+
   cursor: pointer;
-  transition: transform 0.22s ease, filter 0.22s ease;
+  transition: 0.22s ease;
 }
 
 .enroll-butn:hover {
@@ -179,6 +245,10 @@
 .enroll-butn.third {
   background: linear-gradient(90deg, #8b5cf6, #c084fc);
 }
+
+/* ===========================
+   Responsive
+=========================== */
 
 @media (max-width: 880px) {
   .content {
@@ -207,3 +277,9 @@
   }
 }
 
+.Courses{
+    background-image: url("../assets/pms-imgs/background-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,5 +1,5 @@
 import './Hero.css'
-
+import TiltedCard from './TiltedCard';
 function Hero (){
     return (
         <section id="home" className="hero">
@@ -20,11 +20,25 @@ function Hero (){
                 </div>
 
                 <div className="hero-Image">
-                    <img
-                        src="https://images.unsplash.com/photo-1592890288564-76628a30a657?w=1000&auto=format&fit=crop&q=80"
+                    {/* <img
+                        src="https://res.cloudinary.com/ddxn7wurs/image/upload/f_auto,q_auto/v1782713779/image11_hub4mo.heic"
                         alt="Technician repairing a smartphone"
                         loading="lazy"
-                    />
+                    /> */}
+                    <TiltedCard className="tiltedimg"
+  imageSrc="https://res.cloudinary.com/ddxn7wurs/image/upload/f_auto,q_auto/v1782713779/image11_hub4mo.heic"
+  altText="Kendrick Lamar - GNX Album Cover"
+  captionText="PMS"
+  containerHeight="500px"
+  containerWidth="300px"
+  imageHeight="500px"
+  imageWidth="700px"
+  rotateAmplitude={12}
+  scaleOnHover={1.03}
+  showMobileWarning={false}
+  showTooltip
+  displayOverlayContent
+/>
                 </div>
             </div>
         </section>

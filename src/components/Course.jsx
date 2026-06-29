@@ -4,7 +4,7 @@ import { FaApple } from "react-icons/fa";
 
 function Course() {
   return (
-    <div>
+    <div className="Courses">
 
         <div className="cards">
       <div className="Mobile-card blue">

@@ -1,8 +1,9 @@
 import "./Navbar.css"
 import Logo from "../assets/pms-imgs/pms-logo.png"
-
+import ClickSpark from './ClickSpark.jsx'
 function Navbar(){
         return ( 
+            <ClickSpark>
                 <header className = "navbar" role="navigation" aria-label="Main navigation">
             
                 <div className="nav-container">
@@ -27,6 +28,7 @@ function Navbar(){
         </div>
     </div>
 </header>
+</ClickSpark>
         )
 }
 

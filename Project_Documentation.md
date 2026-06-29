@@ -396,7 +396,7 @@ PascalCase
 - SEO Optimization
 - Google Analytics
 - Performance Optimization
-
+- Forgot Password
 ---
 
 # Deployment
