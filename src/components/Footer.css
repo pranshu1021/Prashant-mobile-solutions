@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+footer {
+background-color: gray;
+color:white;
+
+padding:10px;
+
+}
+.footer-top{
+display:flex;
+flex-direction:row;
+justify-content:flex-end;
+padding:10px;
+gap:20px;
+}
+
+
+
+.footer-left  {
+ display:flex;
+justify-content: space-between;
+margin:10px;
+
+}
+.About{
+    height:80px;
+    width:400px;
+}
+
+.footer-middle{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    
+    margin:60px;
+}
+ul {
+    list-style: none;
+    padding-left:0;
+    margin-left:0;
+}
