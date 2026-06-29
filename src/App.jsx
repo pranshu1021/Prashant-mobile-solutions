@@ -5,6 +5,7 @@ import Services from './components/Services.jsx'
 import Course from './components/Course.jsx'
 import ClickSpark from './components/ClickSpark.jsx'
 import Enquiry from './components/Enquiry.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -20,8 +21,11 @@ function App() {
       <Hero />
       <Services />
       <Course />
-      </ClickSpark>
       <Enquiry/>
+      <Footer/>
+      </ClickSpark>
+      
+
     </div>
   )
 }
