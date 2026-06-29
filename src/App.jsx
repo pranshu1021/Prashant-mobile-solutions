@@ -4,6 +4,8 @@ import Navbar from './components/Navbar.jsx'
 import Services from './components/Services.jsx'
 import Course from './components/Course.jsx'
 import ClickSpark from './components/ClickSpark.jsx'
+import Enquiry from './components/Enquiry.jsx'
+
 function App() {
   return (
     <div>
@@ -19,6 +21,7 @@ function App() {
       <Services />
       <Course />
       </ClickSpark>
+      <Enquiry/>
     </div>
   )
 }
