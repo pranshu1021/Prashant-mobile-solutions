@@ -21,7 +21,7 @@ function Enquiry() {
                   <option value="Hardware reparining">Hardware reparining</option>
                 </select>
 
-                <button>Submit</button>
+                <button className="enquiry-butn">Submit</button>
                 </div>
             </form>
         </div>

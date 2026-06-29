@@ -23,7 +23,7 @@ input,#course{
     border-radius: 10px;
 }
 
-button{
+.enquiry-butn {
     height: 40px;
     width: 180px;
     border-radius: 20px;
