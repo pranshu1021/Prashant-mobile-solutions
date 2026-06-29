@@ -28,7 +28,7 @@ function Footer (){
 </div>
 <div className="footer-left">
 <div className="About">
-<img src="" alt=""/>
+<img src="https://res.cloudinary.com/dduglrbdj/image/upload/v1782738772/Heading_p8cb0a.png" alt="logo"/>
 <h2>About us </h2>
 <p>We believe every student has the potential to build a successful career. Through practical training, expert guidance, and industry-focused learning, we prepare future mobile technicians with the skills and confidence to succeed.</p>
 </div>
