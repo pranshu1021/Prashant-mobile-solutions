@@ -23,7 +23,7 @@ function App() {
       <Course />
       <Footer/>
       </ClickSpark>
-    <Enquiry/>
+    
     </div>
   )
 }

@@ -62,6 +62,7 @@ footer.footer {
     height: auto;
     display:block;
     margin-bottom: 12px;
+    border-radius:10px;
 }
 
 .about h2{

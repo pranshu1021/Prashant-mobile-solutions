@@ -35,15 +35,11 @@
     gap:15px;
 }
 .logo{
-    width: 50px;
+    width: 100px;
     height: auto;
     object-fit: contain;
 }
-.brand h2{
-    color: rgb(9, 50, 112);
-    font-size: 1.35rem;
-    font-weight: 700;
-}
+
 
 /* Links */
 
