@@ -1,6 +1,7 @@
 import "./Course.css";
 import { GiVintageRobot, GiAutoRepair } from "react-icons/gi";
 import { FaApple } from "react-icons/fa";
+import basic from "./courses/basic";
 
 function Course() {
   return (
@@ -32,7 +33,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <button type="button" className="enroll-butn one">Enroll Now</button>
+        <button type="button" className="enroll-butn one"><a href="./courses/basic">Enroll now</a></button>
       </div>
 
 

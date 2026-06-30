@@ -6,7 +6,11 @@ import Course from './components/Course.jsx'
 import ClickSpark from './components/ClickSpark.jsx'
 import Enquiry from './components/Enquiry.jsx'
 import Footer from './components/Footer.jsx'
-import Gallery from './components/Gallery.jsx'
+import Gallery from './components/Gallery.jsx';
+import {Routes,Route} from "react-router-dom";
+import basic from './components/courses/basic.jsx'
+
+
 function App() {
   return (
     <div>
@@ -24,7 +28,7 @@ function App() {
       <Footer/>
       </ClickSpark>
       <Gallery />
-    
+   
     </div>
   )
 }
