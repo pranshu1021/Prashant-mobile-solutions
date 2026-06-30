@@ -1,9 +1,12 @@
 import "./Course.css";
 import { GiVintageRobot, GiAutoRepair } from "react-icons/gi";
 import { FaApple } from "react-icons/fa";
-import basic from "./courses/Basic";
+import Basic from "../pages/Basic";
+import {useNavigate} from "react-router-dom" ;
+import {Link} from "react-router-dom" ;
 
 function Course() {
+  const navigate = useNavigate();
   return (
     <div className="Courses">
 
@@ -33,7 +36,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <button type="button" className="enroll-butn one"><a href="./courses/basic">Enroll now</a></button>
+        <button type="button" className="enroll-butn" onClick={()=> navigate("/basic-android") }> Enroll Now </button>
       </div>
 
 
@@ -62,7 +65,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <button type="button" className="enroll-butn second">Enroll Now</button>
+        <Link to = "/advance-android"><button type="button" className="enroll-butn second">Enroll Now</button></Link>
       </div>
 
 
@@ -90,7 +93,7 @@ function Course() {
             <span>Certificate included</span>
           </div>
         </div>
-        <button type="button" className="enroll-butn third">Enroll Now</button>
+        <Link to = "/iphone-course"><button type="button" className="enroll-butn third">Enroll Now</button></Link>
       </div>
       </div>
     </div>

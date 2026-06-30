@@ -1,4 +1,4 @@
-import './App.css'
+
 import Hero from '../components/Hero.jsx'
 import Navbar from '../components/Navbar.jsx'
 import Services from '../components/Services.jsx'
@@ -8,7 +8,7 @@ import Enquiry from '../components/Enquiry.jsx'
 import Footer from '../components/Footer.jsx'
 import Gallery from '../components/Gallery.jsx';
 import {Routes,Route} from "react-router-dom";
-import Basic from '../components/courses/Basic.jsx'
+import Basic from './Basic.jsx'
 
 
 function Home() {
