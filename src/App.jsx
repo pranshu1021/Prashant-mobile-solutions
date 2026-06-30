@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import {Routes,Route} from 'react-router-dom'
 import Basic from './pages/Basic'
 import Advance from './pages/Advance'
-import IPhone from './pages/Iphone'
+import IPhone from './pages/IPhone'
 function App() {
   return (
     
