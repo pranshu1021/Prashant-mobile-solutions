@@ -6,7 +6,7 @@ import Course from './components/Course.jsx'
 import ClickSpark from './components/ClickSpark.jsx'
 import Enquiry from './components/Enquiry.jsx'
 import Footer from './components/Footer.jsx'
-
+import Gallery from './components/Gallery.jsx'
 function App() {
   return (
     <div>
@@ -23,6 +23,7 @@ function App() {
       <Course />
       <Footer/>
       </ClickSpark>
+      <Gallery />
     
     </div>
   )
