@@ -25,9 +25,10 @@ function Home() {
       <Hero />
       <Services />
       <Course />
+       <Gallery />
       <Footer/>
       </ClickSpark>
-      <Gallery />
+     
    
     </div>
   )
