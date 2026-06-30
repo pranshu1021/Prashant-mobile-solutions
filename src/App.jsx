@@ -21,11 +21,9 @@ function App() {
       <Hero />
       <Services />
       <Course />
-   
       <Footer/>
       </ClickSpark>
-      
-   <Enquiry/>
+    <Enquiry/>
     </div>
   )
 }
