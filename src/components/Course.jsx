@@ -1,7 +1,7 @@
 import "./Course.css";
 import { GiVintageRobot, GiAutoRepair } from "react-icons/gi";
 import { FaApple } from "react-icons/fa";
-import basic from "./courses/basic";
+import basic from "./courses/Basic";
 
 function Course() {
   return (

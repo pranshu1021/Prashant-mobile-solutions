@@ -1,6 +1,6 @@
 import React from 'react'
 
-function basic() {
+function Basic() {
   return (
     <div>
         <div className='Basic-course'>
@@ -17,4 +17,4 @@ function basic() {
   )
 }
 
-export default basic
+export default Basic;
