@@ -4,6 +4,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCopyright } from "react-icons/md";
+import Aboutus from "./Aboutus";
+import {Link} from "react-router-dom" ;
+
 
 
 
@@ -38,9 +41,9 @@ function Footer (){
                     <div className="links">
                         <h3>Important Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About us</Link></li>
+                            <li><Link to="/contact">Contact us</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import "./Courses.css";
 
+
 function Courses() {
   return (
     <div id="courses">

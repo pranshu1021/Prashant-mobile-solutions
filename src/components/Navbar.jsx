@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import Logo from "../assets/pms-imgs/pms-logo.png"
 import ClickSpark from './ClickSpark.jsx'
+import { Link } from "react-router-dom";
 function Navbar(){
         return ( 
             <ClickSpark>
@@ -9,16 +10,16 @@ function Navbar(){
                 <div className="nav-container">
     
         <div className="brand">
-            <img src={Logo} alt="Prashant Mobile Solutions Logo" className="logo"/>
+            <Link to ="/"><img src={Logo} alt="Prashant Mobile Solutions Logo" className="logo"/></Link>
            
         </div>
 
         <nav className="nav_links" aria-label="Primary">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#courses">Courses</a>
-            <a href="#contact">Contact Us</a>
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/about">About</Link>
+            <Link to="/courses">Courses</Link>
+            <Link to="/contact">Contact Us</Link>
         </nav>
 
 
