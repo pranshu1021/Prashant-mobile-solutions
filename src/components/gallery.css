@@ -29,7 +29,7 @@ flex-wrap:wrap;
 justify-content:center;
 gap:20px;
 }
-.card{
+.card-gallery{
     display:flex;
     flex-direction:wrap;
 justify-content: center;

@@ -24,7 +24,7 @@ function Footer (){
                 </div>
                 <div className="location-container">
                     <h4><FaLocationDot aria-hidden="true"/> Location</h4>
-                    <p>F-141, F-Block 3D Futa Road, Khajuri Khas Delhi 110090</p>
+                    <p>C15/9, Gali No. 1, Near Bus Stand, Bhajanpura, Delhi 110053</p>
                 </div>
             </div>
 

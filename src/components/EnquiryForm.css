@@ -1,0 +1,150 @@
+.enquiry-section{
+    /* background-color: red; */
+    padding: 80px 20px;
+}
+
+.enquiry-card{
+    /* background-color: greenyellow; */
+    margin:0 auto;
+    border-radius: 20px;
+    box-shadow: 0 18px 50px rgba(black,0.12);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
+    background: #ffffff;
+}
+
+.enquiry-intro{
+    /* margin-top: 20px; */
+    padding: 40px;
+    background-color: blue;
+    color: white;
+}
+
+.enquiry-tag{
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.enquiry-intro h2{
+    margin: 0 0 15px;
+    font-size: 2rem;
+}
+.enquiry-intro p{
+    margin:0;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+
+}
+
+.enquiry-form{
+    display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 40px;
+}
+
+.enquiry-form input, .enquiry-form select, .enquiry-form textarea{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    outline: none;
+    
+}
+.enquiry-form textarea{
+    min-height: 110px;
+    resize: vertical;
+}
+
+.enquiry-form button, .popup-button{
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-weight: 600;
+
+
+}
+
+.enquiry-form button{
+    background: blue;
+    color: white;
+    margin-top:6px;
+}
+
+.enquiry-form button:hover, .popup-button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px (black, 0.12);
+}
+
+.popup-overlay{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup-box{
+    position: relative;
+    width: min(420px,100%);
+   background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(black,0.12);
+    text-align: center;
+}
+
+.popup-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+}
+
+.popup-badge{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: white;
+    font-size: 0.8rem;
+    background: rgba(12, 8, 255, 0.452);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.popup-box h3{
+    margin: 0 0 16px;
+    line-height: 1.6;
+    
+    
+}
+.popup-button{
+    color: white;
+    background-color: blue;
+
+}
+
+@media (max-width:800px){
+    .enquiry-card{
+        grid-template-columns: 1fr;
+        
+    }
+    .enquiry-intro, .enquiry-form{
+        padding: 24px;
+    }
+}

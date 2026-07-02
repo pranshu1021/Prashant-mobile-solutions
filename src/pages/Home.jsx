@@ -4,11 +4,12 @@ import Navbar from '../components/Navbar.jsx'
 import Services from '../components/Services.jsx'
 import Course from '../components/Course.jsx'
 import ClickSpark from '../components/ClickSpark.jsx'
-import Enquiry from '../components/Enquiry.jsx'
+import Enquiry from '../components/EnquiryForm.jsx'
 import Footer from '../components/Footer.jsx'
 import Gallery from '../components/Gallery.jsx';
 import {Routes,Route} from "react-router-dom";
 import Basic from './Basic.jsx'
+import EnquiryForm from '../components/EnquiryForm.jsx'
 
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       <Services />
       <Course />
        <Gallery />
+       <EnquiryForm/>
       <Footer/>
       </ClickSpark>
      
