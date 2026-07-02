@@ -1,0 +1,8 @@
+.Gallery-image-container{
+    background-color: red;
+    
+}
+.Gallery-section {
+    display:flex;
+    flex-direction:row;
+}

@@ -2,6 +2,7 @@ import "./Navbar.css"
 import Logo from "../assets/pms-imgs/pms-logo.png"
 import ClickSpark from './ClickSpark.jsx'
 import { Link } from "react-router-dom";
+
 function Navbar(){
         return ( 
             <ClickSpark>
@@ -17,6 +18,7 @@ function Navbar(){
         <nav className="nav_links" aria-label="Primary">
             <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
+            <Link to="/gallerypage">Gallery</Link>
             <Link to="/about">About</Link>
             <Link to="/courses">Courses</Link>
             <Link to="/contact">Contact Us</Link>
