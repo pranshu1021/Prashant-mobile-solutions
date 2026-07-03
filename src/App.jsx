@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import GalleryPage from './components/GalleryPage'
 import AdvanceTopic from './components/AdvanceTopic'
+import IPhonepage from './components/IPhonepage'
 
 function App() {
   return (

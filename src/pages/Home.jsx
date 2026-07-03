@@ -10,6 +10,8 @@ import Gallery from '../components/Gallery.jsx';
 import {Routes,Route} from "react-router-dom";
 import Basic from './Basic.jsx'
 import EnquiryForm from '../components/EnquiryForm.jsx'
+import AdvanceTopic from '../components/AdvanceTopic.jsx'
+import IPhonepage from '../components/IPhonepage.jsx'
 
 
 function Home() {
@@ -30,6 +32,8 @@ function Home() {
        <EnquiryForm/>
       <Footer/>
       </ClickSpark>
+      <AdvanceTopic/>
+      <IPhonepage/>
      
    
     </div>

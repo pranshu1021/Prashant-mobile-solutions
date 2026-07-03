@@ -1,0 +1,65 @@
+.Iphone-container{
+    display:flex;
+}
+
+.iphone-card1 {
+    width:300px;
+    background-color:rgb(154, 162, 91);
+    border : none;
+    border-radius:12px;
+    padding:15px;
+    margin:20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+    
+}
+.iphone-card1 img{
+    width:100%px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+   
+
+}
+.iphone-card1 h3{
+    margin-top:10px;
+    font-size:20px;
+    color:rgb(38, 25, 81);
+
+}
+.iphone-card p{
+    color:rgb(56, 55, 55);
+    margin-top:10px;
+}
+
+.iphone-card2 {
+    width:300px;
+    background-color:rgba(212, 163, 135, 0.955);;
+    border : none;
+    border-radius:12px;
+    padding:15px;
+    margin:20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+    
+}
+.iphone-card2 img{
+    width:100%px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+   
+
+}
+.iphone-card2 h3{
+    margin-top:10px;
+    font-size:20px;
+    color:rgb(31, 49, 5)
+
+}
+.iphone-card2 p{
+    color:rgb(62, 61, 61);
+    margin-top:10px;
+}
