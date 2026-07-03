@@ -11,8 +11,8 @@ export default function GalleryPage() {
     'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978206/image4_xsxpr1.heic',
     'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978206/image5_ztmuhv.heic',
     'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978207/image6_ymdayk.heic',
-    'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978208/image7_t4ojml.heic',
-    'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978212/image8_avjfts.heic'
+    /*'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978208/image7_t4ojml.heic',*/
+    /*'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978212/image8_avjfts.heic'*/
   ]
 
   return (

@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Hardware_details from '../components/Hardware_details'
+import AdvanceTopic  from '../components/AdvanceTopic'
 import "./Course-page.css";
 
 function Advance() {
@@ -16,7 +18,8 @@ function Advance() {
          <div className='advance-content'>
             
             <h2 className='advance-content-h2'>Basic course </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus laboriosam nisi, ipsa quod sequi, est fugiat modi officia itaque optio illo deserunt adipisci esse inventore molestias iste veniam, vel ea. Ea commodi cupiditate, quas similique tenetur hic quo neque?</p>
+            <Hardware_details/>
+            <AdvanceTopic/>
          </div>
         </div>
         <Footer/>

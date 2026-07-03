@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Hardware_details from '../components/Hardware_details';
 import "./Course-page.css";
 
 function Basic() {
@@ -16,7 +17,7 @@ function Basic() {
          <div className='basic-content'>
             
             <h2 className='basic-content-h2'>Basic course </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus laboriosam nisi, ipsa quod sequi, est fugiat modi officia itaque optio illo deserunt adipisci esse inventore molestias iste veniam, vel ea. Ea commodi cupiditate, quas similique tenetur hic quo neque?</p>
+         <Hardware_details/>
          </div>
         </div>
         <Footer/>
