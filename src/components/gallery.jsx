@@ -26,9 +26,6 @@ import "./Gallery.css"
 </div>
 
 </div>
-
-
-
 </div>
     )
  }

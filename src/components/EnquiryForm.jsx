@@ -15,6 +15,8 @@ export default function EnquiryForm(){
     
     useEffect(()=>{
         setShowPopup(true);
+        
+        emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     },[])
 
     const handleChange = (e)=>{
@@ -31,8 +33,8 @@ export default function EnquiryForm(){
         emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-            formData
+            formData,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(()=>{
             alert("Enquiry is sent to your email successfully!!");
@@ -58,7 +60,7 @@ export default function EnquiryForm(){
                 <p>Share your details and our team will guide you toward the best course for your goals.</p>
             </div>
 
-            <form className="enquiry-form" >
+            <form className="enquiry-form" onSubmit={handleSubmit}>
                 <input type="text" 
                 placeholder="Enter your name"
                 name="name" 
