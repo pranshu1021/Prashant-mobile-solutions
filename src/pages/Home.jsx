@@ -10,9 +10,13 @@ import Gallery from '../components/Gallery.jsx';
 import {Routes,Route} from "react-router-dom";
 import Basic from './Basic.jsx'
 import EnquiryForm from '../components/EnquiryForm.jsx'
+import Hardware_sol from '../components/Hardware_sol.jsx'
+import Hardware_details from '../components/Hardware_details.jsx'
 
 
 function Home() {
+
+
   return (
     <div>
         <ClickSpark
@@ -28,6 +32,7 @@ function Home() {
       <Course />
        <Gallery />
        <EnquiryForm/>
+    <Hardware_details/>
       <Footer/>
       </ClickSpark>
      

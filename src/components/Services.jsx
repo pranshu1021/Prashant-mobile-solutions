@@ -15,11 +15,13 @@ const details=[
 
 function Services (){
   return (
+    <>
     <div id="services" className='Services-container'>
       {details.map((item , index)=>( 
         <Service key={index} svg = {item.svg} heading = {item.heading} p = {item.p}/>
       ))}
     </div>
+    </>
   )
 }
 
