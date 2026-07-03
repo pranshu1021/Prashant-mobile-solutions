@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus'
 import Contact from './components/Contact'
 import Services from './components/Services'
 import GalleryPage from './components/GalleryPage'
+import AdvanceTopic from './components/AdvanceTopic'
 
 function App() {
   return (
@@ -21,9 +22,12 @@ function App() {
   <Route path = "/contact" element = {<Contact/>}/>
   <Route path = "/services" element = {<Services/>}/>
   <Route path = "/gallerypage" element ={<GalleryPage/>}/>
+  <Route path = "/advancetopic" element = {<AdvanceTopic/>}/>
+  
 </Routes>
     
   )
+  
 }
 
 export default App;
