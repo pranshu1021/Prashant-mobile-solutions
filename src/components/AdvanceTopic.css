@@ -1,7 +1,12 @@
+.Advancecard-container{
+    display:flex;
+    gap:40px;
+}
+
 .Advance-card{
     width:300px;
     background-color: antiquewhite;
-    border:1px solid black;
+    border:none;
     border-radius:12px;
     padding:15px;
     margin:20px;
@@ -28,3 +33,96 @@
     color:rgb(62, 61, 61);
     margin-top:10px;
 }
+.Advance-card2{
+    width:300px;
+    background-color:rgb(236, 201, 245);
+    border : none;
+    border-radius:12px;
+    padding:15px;
+    margin:20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+    
+}
+.Advance-card2 img{
+    width:100%px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+   
+
+}
+.Advance-card2 h3{
+    margin-top:10px;
+    font-size:20px;
+    color:rgb(31, 49, 5)
+
+}
+.Advance-card2 p{
+    color:rgb(62, 61, 61);
+    margin-top:10px;
+}
+.Advance-card3{
+    width:300px;
+    background-color:rgb(196, 182, 240);
+    border : none;
+    border-radius:12px;
+    padding:15px;
+    margin:20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+    
+}
+.Advance-card3 img{
+    width:100%px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+   
+
+}
+.Advance-card3 h3{
+    margin-top:10px;
+    font-size:20px;
+    color:rgb(31, 49, 5)
+
+}
+.Advance-card3 p{
+    color:rgb(62, 61, 61);
+    margin-top:10px;
+}
+
+.Advance-card4 {
+    width:300px;
+    background-color:rgb(163, 227, 243);
+    border : none;
+    border-radius:12px;
+    padding:15px;
+    margin:20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+    
+}
+.Advance-card4 img{
+    width:100%px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+   
+
+}
+.Advance-card4 h3{
+    margin-top:10px;
+    font-size:20px;
+    color:rgb(31, 49, 5)
+
+}
+.Advance-card4 p{
+    color:rgb(62, 61, 61);
+    margin-top:10px;
+}
+
+

@@ -22,7 +22,7 @@ function Navbar(){
             <Link to="/about">About</Link>
             <Link to="/courses">Courses</Link>
             <Link to="/contact">Contact Us</Link>
-            <Link to="/advancetopic">Advance-courses</Link>
+            
         </nav>
 
 
