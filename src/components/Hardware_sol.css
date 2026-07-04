@@ -1,29 +1,43 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-.Hardware-sol-card{
-    background-color: rgb(153, 238, 153,0.75) ;
-    height: 350px;
-    width: 300px;
-    margin-left: 200px;
-    margin-bottom: 100px;
-    border-radius: 20px;
-   content-visibility: auto;
-}
-
-.hardware-sol-heading,.hardware-sol-para {
-    padding-left: 10px;
-}
-
-.Hardware-sol-card img{
-    padding: 10px;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+.Hardware-sol-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
     overflow: hidden;
-    border-radius: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
 }
+
+.Hardware-sol-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 32px 60px rgba(15, 23, 42, 0.12);
+}
+
+.Hardware-sol-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.hardware-sol-heading,
+.hardware-sol-para {
+    padding: 1rem 1.2rem 0.8rem;
+}
+
+.hardware-sol-heading {
+    margin: 0;
+    font-size: 1.08rem;
+    color: #111827;
+    font-weight: 700;
+}
+
+.hardware-sol-para {
+    margin: 0.65rem 0 1.2rem;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 0.98rem;
+}
+
 
