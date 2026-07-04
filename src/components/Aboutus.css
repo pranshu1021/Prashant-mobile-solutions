@@ -1,0 +1,9 @@
+.aboutus{
+    margin-top:150px;
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap:40px;
+    margin-left:85px;
+    margin-bottom:50px;
+}

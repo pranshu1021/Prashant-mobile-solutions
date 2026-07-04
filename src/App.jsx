@@ -10,6 +10,7 @@ import Services from './components/Services'
 import GalleryPage from './components/GalleryPage'
 import AdvanceTopic from './components/AdvanceTopic'
 import IPhonepage from './components/IPhonepage'
+import Comingsoon from './components/Comingsoon'
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
   <Route path = "/services" element = {<Services/>}/>
   <Route path = "/gallerypage" element ={<GalleryPage/>}/>
   <Route path = "/advancetopic" element = {<AdvanceTopic/>}/>
-  
+  <Route path = "/comingsoonpage" element = {<Comingsoon/>}/>
 </Routes>
     
   )

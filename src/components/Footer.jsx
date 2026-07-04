@@ -16,7 +16,10 @@ function Footer (){
             <div className="footer-top" role="contentinfo" aria-label="contact">
                 <div className="contact-container">
                     <h4><FaPhoneAlt aria-hidden="true"/> Phone</h4>
-                    <p>+91 0001234567</p>
+                    <p>+91 89203 43448
+                      
+                    </p>
+                    <p>  +91 92893 22219</p>
                 </div>
                 <div className="email-container">
                     <h4><MdEmail aria-hidden="true"/> Email</h4>

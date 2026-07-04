@@ -4,7 +4,7 @@ import "./Gallery.css"
     return (
 <div className="Gallery">
 <h1>Gallery</h1>
-<p>Beautiful, modern gallery section designs</p>
+
 <div className="gallery-container">
 <div className="card-gallery">
     <img src="https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978215/image12_xybdcm.heic" alt="image 1" />

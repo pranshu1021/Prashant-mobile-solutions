@@ -1,5 +1,7 @@
 import './Hero.css'
 import TiltedCard from './TiltedCard';
+
+import { HashLink } from 'react-router-hash-link';
 function Hero (){
     return (
         <section id="home" className="hero">
@@ -14,8 +16,8 @@ function Hero (){
                         and practical learning, all under one roof.
                     </p>
                     <div className="hero-buttons">
-                        <button type="button" className='primary-btn'>Book Repair</button>
-                        <button type="button" className='secondary-btn'>Explore Courses</button>
+                        <HashLink smooth to  ="/#Courses"className='primary-btn'>Book Repair</HashLink>
+                       <HashLink smooth to ="/#Courses" className='secondary-btn'>Explore Courses</HashLink>
                     </div>
                 </div>
 
@@ -27,7 +29,7 @@ function Hero (){
                     /> */}
                     <TiltedCard className="tiltedimg"
   imageSrc="https://res.cloudinary.com/ddxn7wurs/image/upload/f_auto,q_auto/v1782713779/image11_hub4mo.heic"
-  altText="Kendrick Lamar - GNX Album Cover"
+  
   captionText="PMS"
   containerHeight="500px"
   containerWidth="300px"

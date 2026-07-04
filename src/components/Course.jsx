@@ -8,7 +8,7 @@ import {Link} from "react-router-dom" ;
 function Course() {
   const navigate = useNavigate();
   return (
-    <div className="Courses">
+    <div id="Courses" className="Courses">
 
         <div className="cards">
       <div className="Mobile-card blue">
