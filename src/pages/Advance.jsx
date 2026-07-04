@@ -11,9 +11,7 @@ function Advance() {
       <Navbar />
       <div className='Advance-course'>
         <div className='course-hero'>
-          <div className='advance-img'>
-            <img src="https://plus.unsplash.com/premium_photo-1663021816337-be7fb3833336?q=80&w=1400&auto=format&fit=crop" alt="Advanced mobile repair techniques" />
-          </div>
+         
           <div className='advance-content'>
             <div className='course-copy'>
               <span className='course-label'>Advanced Repair Training</span>

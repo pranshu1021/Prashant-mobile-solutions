@@ -10,9 +10,8 @@ function Basic() {
       <Navbar />
       <div className='Basic-course'>
         <div className='course-hero'>
-          <div className='basic-img'>
-            <img src="https://plus.unsplash.com/premium_photo-1663047430590-f2947119c3f0?w=1200&auto=format&fit=crop&q=80" alt="Basic mobile repair course" />
-          </div>
+          
+          
           <div className='basic-content'>
             <div className='course-copy'>
               <span className='course-label'>Fundamentals of Mobile Repair</span>

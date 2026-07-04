@@ -21,30 +21,36 @@ body {
     padding: 60px 20px 80px;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
 .Basic-course {
     background-image: radial-gradient(circle at top left, rgba(99, 102, 241, 0.16), transparent 28%),
       linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+      margin-top:70px;
 }
 
 .Advance-course {
     background-image: radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 30%),
       linear-gradient(180deg, #f0fdf4 0%, #f8fafc 100%);
+      margin-top:70px;
 }
 
 .Iphone-course {
     background-image: radial-gradient(circle at top right, rgba(168, 85, 247, 0.14), transparent 30%),
       linear-gradient(180deg, #faf5ff 0%, #f8fafc 100%);
+      margin-top:70px;
 }
 
 .course-hero {
     width: 100%;
     max-width: 1180px;
-    display: grid;
-    grid-template-columns: 1fr 1.05fr;
+    display: flex;
+    justify-content: center;
+
     gap: 2.5rem;
     align-items: center;
+ 
 }
 
 .basic-img,
@@ -81,6 +87,7 @@ body {
     border-radius: 32px;
     padding: 2.4rem 2rem;
     box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    
 }
 
 .course-copy {

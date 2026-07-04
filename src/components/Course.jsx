@@ -32,9 +32,7 @@ function Course() {
             <span>Eligible:</span>
             <strong>10th Pass</strong>
           </div>
-          <div className="Content-desc-condition">
-            <span>Certificate included</span>
-          </div>
+          {/*  */}
         </div>
         <button type="button" className="enroll-butn" onClick={()=> navigate("/basic-android") }> Enroll Now </button>
       </div>
@@ -61,11 +59,11 @@ function Course() {
             <span>Eligible:</span>
             <strong>12th Pass</strong>
           </div>
-          <div className="Content-desc-condition">
-            <span>Certificate included</span>
-          </div>
+          {/* <div className="Content-desc-condition"> */}
+            {/* <span>Certificate included</span> */}
+          {/* </div> */}
         </div>
-        <Link to = "/advance-android"><button type="button" className="enroll-butn second">Enroll Now</button></Link>
+      <button type="button" className="enroll-butn second" onClick={()=> navigate("/advance-android") }>Enroll Now</button>
       </div>
 
 
@@ -89,11 +87,11 @@ function Course() {
             <span>Eligible:</span>
             <strong>12th Pass</strong>
           </div>
-          <div className="Content-desc-condition">
+          {/* <div className="Content-desc-condition">
             <span>Certificate included</span>
-          </div>
+          </div> */}
         </div>
-        <Link to = "/iphone-course"><button type="button" className="enroll-butn third">Enroll Now</button></Link>
+        <button type="button" className="enroll-butn third" onClick={()=> navigate("/iphone-course") } >Enroll Now</button>
       </div>
       </div>
     </div>

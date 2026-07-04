@@ -8,13 +8,11 @@ import "./Course-page.css";
 
 function IPhone() {
   return (
-    <div>
+    <div>  
       <Navbar />
       <div className='Iphone-course'>
         <div className='course-hero'>
-          <div className='iphone-img'>
-            <img src="https://images.unsplash.com/photo-1588515603140-81bd9f7d1db0?w=1200&auto=format&fit=crop&q=80" alt="iPhone repair course" />
-          </div>
+          
           <div className='iphone-content'>
             <div className='course-copy'>
               <span className='course-label'>iPhone Specialist Track</span>

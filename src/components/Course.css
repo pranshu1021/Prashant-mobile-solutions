@@ -226,6 +226,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: white;
+  text-decoration: none;
 
   background: linear-gradient(90deg, #2563eb, #3b82f6);
 
