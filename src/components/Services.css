@@ -1,27 +1,32 @@
 .Services-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    gap: 18px;
+    overflow: hidden;
     padding: 42px 20px 35px;
     background-color: #f7f9fd;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
 }
 
-.Services-container > .service-card {
-    scroll-snap-align: center;
+.Services-track {
+    display: flex;
+    gap: 18px;
+    align-items: stretch;
+    min-width: 200%;
+    animation: marquee 20s linear infinite;
+}
+
+/* .Services-container:hover .Services-track {
+    animation-play-state: paused;
+} */
+
+.Services-track > .service-card {
     flex: 0 0 auto;
 }
 
-.Services-container::-webkit-scrollbar {
-    height: 10px;
-}
-
-.Services-container::-webkit-scrollbar-thumb {
-    background: rgba(15, 23, 42, 0.2);
-    border-radius: 999px;
+@keyframes marquee {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 1024px) {

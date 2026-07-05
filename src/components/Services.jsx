@@ -14,13 +14,17 @@ const details=[
 ];
 
 function Services (){
+  const marqueeItems = [...details, ...details];
+
   return (
     <>
-    <div id="services" className='Services-container'>
-      {details.map((item , index)=>( 
-        <Service key={index} svg = {item.svg} heading = {item.heading} p = {item.p}/>
-      ))}
-    </div>
+      <div id="services" className='Services-container'>
+        <div className="Services-track">
+          {marqueeItems.map((item, index)=> (
+            <Service key={`${item.heading}-${index}`} svg={item.svg} heading={item.heading} p={item.p} />
+          ))}
+        </div>
+      </div>
     </>
   )
 }
