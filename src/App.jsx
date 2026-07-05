@@ -11,7 +11,7 @@ import GalleryPage from './components/GalleryPage'
 import AdvanceTopic from './components/AdvanceTopic'
 import IPhonepage from './components/IPhonepage'
 import Comingsoon from './components/Comingsoon'
-
+import Courses from './pages/Courses'
 function App() {
   return (
     
@@ -26,6 +26,7 @@ function App() {
   <Route path = "/gallerypage" element ={<GalleryPage/>}/>
   <Route path = "/advancetopic" element = {<AdvanceTopic/>}/>
   <Route path = "/comingsoonpage" element = {<Comingsoon/>}/>
+  <Route path = "/courses" element = {<Courses/>}/>
 </Routes>
     
   )
