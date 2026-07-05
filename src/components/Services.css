@@ -12,9 +12,9 @@
     animation: marquee 20s linear infinite;
 }
 
-/* .Services-container:hover .Services-track {
+.Services-container:hover .Services-track {
     animation-play-state: paused;
-} */
+}
 
 .Services-track > .service-card {
     flex: 0 0 auto;
