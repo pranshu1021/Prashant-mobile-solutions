@@ -46,7 +46,7 @@ function Footer (){
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About us</Link></li>
-                            <li><Link to="/contact">Contact us</Link></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function Footer (){
             <div className="footer-bottom">
                 <div className="copyright-section">
                     <MdCopyright aria-hidden="true" />
-                    <p>Copyright 2025. All Rights Reserved</p>
+                    <p>Copyright 2026. All Rights Reserved</p>
                 </div>
             </div>
         </footer>
