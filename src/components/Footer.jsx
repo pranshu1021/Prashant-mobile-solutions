@@ -25,7 +25,7 @@ function Footer (){
                 </div>
                 <div className="email-container">
                     <h4><MdEmail aria-hidden="true"/>{t("footer.email_label")}</h4>
-                    <p>abc@gmail.com</p>
+                    <p>teampms@gmail.com</p>
                 </div>
                 <div className="location-container">
                     <h4><FaLocationDot aria-hidden="true"/>{t("footer.location_label")}</h4>
