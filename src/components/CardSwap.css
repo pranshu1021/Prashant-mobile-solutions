@@ -1,40 +1,60 @@
 .card-swap-container {
   position: relative;
-  /* Keep stacking context for absolutely-positioned cards inside */
-  perspective: 800px;
+  perspective: 900px;
   overflow: visible;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .card-swap-container .card {
   position: absolute;
-  /* position each card centered inside the container; GSAP uses xPercent/yPercent -50 to align */
   top: 50%;
   left: 50%;
-  border-radius: 12px;
-  border: 1px solid #fff;
-  background: rgba(173, 216, 230, 0.92);
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.557);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.14);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 2;
-  padding: 0px 12px;
-  font-size: 20px;
+  line-height: 1.75;
+  padding: 2rem;
+  font-size: 1rem;
   transform-style: preserve-3d;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
-@media (max-width: 768px) {
+.card-swap-container .card h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.card-swap-container .card p {
+  margin: 0;
+  color: #3b4a5a;
+  font-size: 0.98rem;
+  max-width: 18rem;
+}
+
+@media (max-width: 900px) {
   .card-swap-container {
-    transform: scale(0.75);
+    transform: scale(0.85);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 740px) {
+  .card-swap-container {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 560px) {
   .card-swap-container {
     transform: scale(0.55);
   }

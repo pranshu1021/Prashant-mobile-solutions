@@ -1,4 +1,4 @@
-import React, { Children, cloneElement, forwardRef, isValidElement, useEffect, useMemo, useRef } from 'react';
+import React, { Children, cloneElement, forwardRef, isValidElement, useEffect, useMemo, useRef, useState } from 'react';
 import gsap from 'gsap';
 import './CardSwap.css';
 
@@ -38,6 +38,30 @@ const CardSwap = ({
   easing = 'elastic',
   children
 }) => {
+  const [containerWidth, setContainerWidth] = useState(width);
+  const [containerHeight, setContainerHeight] = useState(height);
+
+  useEffect(() => {
+    const updateSize = () => {
+      const viewport = window.innerWidth;
+      let nextWidth = width;
+      if (viewport < width + 90) {
+        nextWidth = Math.max(280, viewport - 72);
+      }
+      const ratio = height / width;
+      setContainerWidth(nextWidth);
+      setContainerHeight(Math.round(nextWidth * ratio));
+    };
+
+    updateSize();
+    window.addEventListener('resize', updateSize);
+    return () => window.removeEventListener('resize', updateSize);
+  }, [width, height]);
+
+  const scaleFactor = containerWidth / width;
+  const responsiveCardDistance = Math.max(36, Math.round(cardDistance * scaleFactor));
+  const responsiveVerticalDistance = Math.max(40, Math.round(verticalDistance * scaleFactor));
+
   const config =
     easing === 'elastic'
       ? {
@@ -72,7 +96,13 @@ const CardSwap = ({
 
   useEffect(() => {
     const total = refs.length;
-    refs.forEach((r, i) => placeNow(r.current, makeSlot(i, cardDistance, verticalDistance, total), skewAmount));
+    refs.forEach((r, i) =>
+      placeNow(
+        r.current,
+        makeSlot(i, responsiveCardDistance, responsiveVerticalDistance, total),
+        skewAmount
+      )
+    );
 
     const swap = () => {
       if (order.current.length < 2) return;
@@ -91,7 +121,7 @@ const CardSwap = ({
       tl.addLabel('promote', `-=${config.durDrop * config.promoteOverlap}`);
       rest.forEach((idx, i) => {
         const el = refs[idx].current;
-        const slot = makeSlot(i, cardDistance, verticalDistance, refs.length);
+        const slot = makeSlot(i, responsiveCardDistance, responsiveVerticalDistance, refs.length);
         tl.set(el, { zIndex: slot.zIndex }, 'promote');
         tl.to(
           el,
@@ -106,7 +136,7 @@ const CardSwap = ({
         );
       });
 
-      const backSlot = makeSlot(refs.length - 1, cardDistance, verticalDistance, refs.length);
+      const backSlot = makeSlot(refs.length - 1, responsiveCardDistance, responsiveVerticalDistance, refs.length);
       tl.addLabel('return', `promote+=${config.durMove * config.returnDelay}`);
       tl.call(
         () => {
@@ -162,7 +192,7 @@ const CardSwap = ({
       ? cloneElement(child, {
           key: i,
           ref: refs[i],
-          style: { width, height, ...(child.props.style ?? {}) },
+          style: { width: containerWidth, height: containerHeight, ...(child.props.style ?? {}) },
           onClick: e => {
             child.props.onClick?.(e);
             onCardClick?.(i);
@@ -172,7 +202,7 @@ const CardSwap = ({
   );
 
   return (
-    <div ref={container} className="card-swap-container" style={{ width, height }}>
+    <div ref={container} className="card-swap-container" style={{ width: containerWidth, height: containerHeight }}>
       {rendered}
     </div>
   );

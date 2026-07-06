@@ -25,7 +25,7 @@ function Courses (){
     </div>
 
     <div className="courses-right">
-      <div style={{ height: '600px', position: 'relative' }}>
+      <div className="courses-swap-wrapper">
         <CardSwap
           width={500}
           height={400}

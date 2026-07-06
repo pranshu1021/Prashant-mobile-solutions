@@ -12,6 +12,20 @@
     padding: 1.5rem;
     box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.iphone-card1 h3,
+.iphone-card2 h3 {
+    margin-top: 1rem;
+}
+
+.iphone-card1 p,
+.iphone-card2 p {
+    margin-top: 0.8rem;
+    flex-grow: 1;
 }
 
 .iphone-card1:hover,

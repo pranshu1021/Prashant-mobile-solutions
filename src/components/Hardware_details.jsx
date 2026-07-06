@@ -77,12 +77,10 @@ function Hardware_details() {
 }
 ];
   return (
-    <div>
-           <div  className='Hardware-details'>
+    <div className='Hardware-details'>
       {data.map((item , index)=>( 
-        <Hardware_sol key={index} img_url= {item.img_url} heading = {item.heading} para= {item.para}/>
+        <Hardware_sol key={index} img_url={item.img_url} heading={item.heading} para={item.para} />
       ))}
-    </div>
     </div>
   )
 }
