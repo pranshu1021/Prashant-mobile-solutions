@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
 import emailjs from "@emailjs/browser";
 import "./EnquiryForm.css"
-
+import {useTranslation} from "react-i18next"
 export default function EnquiryForm(){
+    const{t}=useTranslation();
     const [formData,setFormData] = useState({
         name:"",
         phone:"",
@@ -37,9 +38,9 @@ export default function EnquiryForm(){
             import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(()=>{
-            alert("Enquiry is sent to your email successfully!!");
+            alert("Enquiry is sent to your email successfully.")
             setFormData({
-                name:"",
+              name:"",
                 phone:"",
                 email: "",
                 course:"",
@@ -55,14 +56,14 @@ export default function EnquiryForm(){
     return(<section className="enquiry-section" id="enquiry">
         <div className="enquiry-card">
             <div className="enquiry-intro">
-                <p className="enquiry-tag">BOOK A COURSE</p>
-                <h2>Start your mobile repair journey with us.</h2>
-                <p>Share your details and our team will guide you toward the best course for your goals.</p>
+                <p className="enquiry-tag">{t("enquiry_form.tag")}</p>
+                <h2>{t("enquiry_form.title")}</h2>
+                <p>{t("enquiry_form.description")}</p>
             </div>
 
             <form className="enquiry-form" onSubmit={handleSubmit}>
                 <input type="text" 
-                placeholder="Enter your name"
+                placeholder={t("enquiry_form.placeholder_name")}
                 name="name" 
                 value={formData.name}
                 onChange={handleChange}
@@ -70,27 +71,27 @@ export default function EnquiryForm(){
 
                 <input type="tel" 
                 name="phone" 
-                placeholder="Enter your phone number"
+                placeholder= {t("enquiry_form.placeholder_phone")}
                 value={formData.phone}
                 onChange={handleChange}
                 required/>
 
                 <input type="email" 
                 name="email"
-                placeholder="Enter your email"
+                placeholder={t("enquiry_form.placeholder_email")}
                 value={formData.email}
                 onChange={handleChange}
                 required/>
 
                 <select name="course" value={formData.course} onChange={handleChange} required>
-                    <option value="">Select your course</option>
-                    <option value="Basic Android Repair">Basic Android Repair</option>
-                    <option value="Advance Android Repair">Advance Android Repair</option>
-                    <option value="Complete iPhone Repair">Complete iPhone Repair</option>
+                    <option value="">{t("enquiry_form.select_course_default")}</option>
+                    <option value="Basic Android Repair">{t("enquiry_form.course_options.0")}</option>
+                    <option value="Advance Android Repair">{t("enquiry_form.course_options.1")}</option>
+                    <option value="Complete iPhone Repair">{t("enquiry_form.course_option.2")}</option>
                 </select>
 
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Write your message..."/>
-                <button type="submit">Submit Enquiry</button>
+                <textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("enquiry_form.textarea_placeholder")}/>
+                <button type="submit">{t("enquiry_form.submit_button")}</button>
             </form>
         </div>
 
@@ -100,11 +101,11 @@ export default function EnquiryForm(){
                     <button className="popup-close" onClick={()=> setShowPopup(false)}>
                         x
                     </button>
-                    <p className="popup-badge">Welcome to PMS</p>
-                    <h3>Prashant Mobile Solutions</h3>
-                    <p>Explore expert mobile repair courses, get guidance, also book your first lesson with us.</p>
+                    <p className="popup-badge">{t("enquiry_form.popup.badge")}</p>
+                    <h3>{t("enquiry_form.popup.title")}</h3>
+                    <p>{t("enquiry_form.popup.body")}</p>
                     <button className="popup-button" onClick={()=>setShowPopup(false)}>
-                        Let's Begin
+                       {t("enquiry_form.popup.cta")}
                     </button>
                 </div>
             </div>

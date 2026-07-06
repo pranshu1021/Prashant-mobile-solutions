@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const {i18n}= useTranslation();
+    const {t}=useTranslation();
     return (
         <ClickSpark>
             <header className="navbar" role="navigation" aria-label="Main navigation">
@@ -31,24 +32,24 @@ function Navbar() {
 
                     <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
                         <nav className="nav_links" aria-label="Primary">
-                            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-                            <Link to="/gallerypage" onClick={() => setMenuOpen(false)}>Gallery</Link>
-                            <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-                            <Link to="/courses" onClick={() => setMenuOpen(false)}>Courses</Link>
+                            <Link to="/" onClick={() => setMenuOpen(false)}>{t("navbar.home")}</Link>
+                            <Link to="/gallerypage" onClick={() => setMenuOpen(false)}>{t("navbar.gallery")}</Link>
+                            <Link to="/about" onClick={() => setMenuOpen(false)}>{t("navbar.about")}</Link>
+                            <Link to="/courses" onClick={() => setMenuOpen(false)}>{t("navbar.courses")}</Link>
 
                             <div>
                                 <button onClick={()=> i18n.changeLanguage("en")}>
                                     English
                                 </button>
                                 <button onClick={()=> i18n.changeLanguage("hi")}>
-                                    Hindi
+                                    {t("navbar.language_hindi")}
                                 </button>
                             </div>
                         </nav>
 
                         <div className="nav-buttons">
-                            <Link to="/comingsoonpage" className="login-btn" onClick={() => setMenuOpen(false)}>Login</Link>
-                            <Link to="/comingsoonpage" className="signup-btn" onClick={() => setMenuOpen(false)}>Signup</Link>
+                            <Link to="/comingsoonpage" className="login-btn" onClick={() => setMenuOpen(false)}>{t("navbar.login")}</Link>
+                            <Link to="/comingsoonpage" className="signup-btn" onClick={() => setMenuOpen(false)}>{t("navbar.signup")}</Link>
                         </div>
                     </div>
                 </div>

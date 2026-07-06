@@ -5,6 +5,7 @@ import Hardware_details from '../components/Hardware_details'
 import AdvanceTopic  from '../components/AdvanceTopic'
 import "./Course-page.css";
 
+
 function Advance() {
   return (
     <div>

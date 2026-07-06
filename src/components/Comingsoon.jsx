@@ -1,17 +1,19 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import './Comingsoon.css';
+import {useTranslation} from "react-i18next"
 function Comingsoon (){
+    const{t}=useTranslation();
     return(
 <>
 <div className="Comingsoonpage">
     <Navbar />
     <div className="Comingsooncontainer">
 <div className="Comingsooncontent">
-<h1>Student Portal Coming Soon </h1>
-<p> Our dedicated portal for Students and Users is on its way.</p>
-<p>Soon you will be able to create an Account,Login securely,Access Course Material,Track your progress,And Enjoy many more features.</p>
-<p className="Heading">Team PMS</p>
+<h1>{t("coming_soon.heading")} </h1>
+<p> {t("coming_soon.intro")} </p>
+<p>{t("coming_soon.details")} </p>
+<p className="Heading">{t("coming_soon.team_signature")} </p>
 </div>
 </div>
 <Footer />

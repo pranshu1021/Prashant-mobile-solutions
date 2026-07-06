@@ -2,7 +2,9 @@ import CardSwap, { Card } from '../components/CardSwap'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import './Courses.css'
+import {useTranslation} from "react-i18next"
 function Courses (){
+  const{t}=useTranslation();
     return(
 <>
 <Navbar />
@@ -10,17 +12,15 @@ function Courses (){
 <div className="Courses-container">
   <div className="courses-content">
     <div className="courses-left">
-      <h1>Our Courses</h1>
-      <h3>Learn practical mobile repair</h3>
+      <h1>{t("courses_page.heading")}</h1>
+      <h3>{t("courses_page.subheading")}</h3>
       <p>
-        We offer hands-on training from basic hardware repair to advanced
-        chip-level techniques. Choose from structured tracks for Android and
-        iPhone repair, with practical labs, soldering practice and troubleshooting.
+        {t("courses_page.description")}
       </p>
       <ul>
-        <li>Basic Android Repair — components, disassembly, common faults</li>
-        <li>Advanced Android Repair — eMMC/CPU programming, diagnostics</li>
-        <li>Complete iPhone Repair — Face ID, board-level repairs, microsoldering</li>
+        <li>{t("courses_page.list.0")}</li>
+        <li>{t("courses_page.list.1")}</li>
+        <li>{t("courses_page.list.2")}</li>
       </ul>
     </div>
 

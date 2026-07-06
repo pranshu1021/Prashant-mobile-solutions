@@ -2,8 +2,10 @@ import Stack from './Stack'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import './GalleryPage.css'
+ import {useTranslation} from "react-i18next"
 
 export default function GalleryPage() {
+  const{t}=useTranslation();
   const images = [
     'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978205/image1_imz9vh.heic',
     'https://res.cloudinary.com/dduglrbdj/image/upload/f_auto,q_auto/v1782978201/image2_kgvlbi.heic',
@@ -21,17 +23,16 @@ export default function GalleryPage() {
 
       <main className="gallery-section">
         <div className="gallery-copy">
-          <span className="gallery-eyebrow">Crafted work, captured in detail</span>
-          <h2>Our Gallery</h2>
+          <span className="gallery-eyebrow">{t("galleryPage.eyebrow")}</span>
+          <h2>{t("galleryPage.heading")}</h2>
           <p>
-            A glimpse into the care, precision, and craftsmanship that shape every
-            repair, service, and customer experience we deliver.
+            {t("galleryPage.description")}
           </p>
 
           <div className="gallery-highlights">
-            <span>Trusted service</span>
-            <span>Detail-focused work</span>
-            <span>Real customer moments</span>
+            <span>{t("galleryPage.highlights.0")}</span>
+            <span>{t("galleryPage.highlights.1")}</span>
+            <span>{t("galleryPage.highlights.2")}</span>
           </div>
         </div>
 
