@@ -1,3 +1,313 @@
 {
-  "name": "FineWorks"
+  "hero": {
+    "title": "Prashant Mobile Solutions",
+    "subtitle": "Expert Mobile Repairs And Industry Focused Training ",
+    "description": "We provide reliable mobile repair services along with professional training programs to help students build successful careers in the mobile repairing industry. Trusted service, experienced technicians, and practical learning, all under one roof. ",
+    "cta_bookRepair": "Book Repair ",
+    "cta_exploreCourses": "Explore Courses ",
+    "tilt_caption": "PMS"
+  },
+  "navbar": {
+    "home": "Home ",
+    "gallery": "Gallery ",
+    "about": "About ",
+    "courses": "Courses",
+    "language_english": "English",
+    "language_hindi": "Hindi ",
+    "login": "Login ",
+    "signup": "Signup",
+    "aria_open_menu": "Open navigation menu ",
+    "aria_close_menu": "Close navigation menu "
+  },
+  "footer": {
+    "phone_label": "Phone",
+    "phones": ["+91 89203 43448", "+91 92893 22219"],
+    "email_label": "Email ",
+    "email": "abc@gmail.com",
+    "location_label": "Location ",
+    "location": "C15/9, Gali No. 1, Near Bus Stand, Bhajanpura, Delhi 110053",
+    "about_heading": "About us ",
+    "about_paragraph": "We believe every student has the potential to build a successful career. Through practical training, expert guidance, and industry-focused learning, we prepare future mobile technicians with the skills and confidence to succeed.",
+    "important_links_heading": "Important Links",
+    "policies_heading": "Policies ",
+    "policies": {
+      "privacy": "Privacy Policy ",
+      "cookie": "Cookie Policy",
+      "terms": "Terms of use "
+    },
+    "copyright": "Copyright 2026. All Rights Reserved "
+  },
+  "galleryPage": {
+    "eyebrow": "Crafted work, captured in detail ",
+    "heading": "Our Gallery ",
+    "description": "A glimpse into the care, precision, and craftsmanship that shape every repair, service, and customer experience we deliver.",
+    "highlights": [
+      "Trusted service",
+      "Detail-focused work",
+      "Real customer moments "
+    ],
+    "image_alt_prefix": "gallery-image"
+  },
+  "courses_page": {
+    "heading": "Our Courses ",
+    "subheading": "Learn practical mobile repair",
+    "description": "We offer hands-on training from basic hardware repair to advanced chip-level techniques. Choose from structured tracks for Android and iPhone repair, with practical labs, soldering practice and troubleshooting.",
+    "list": [
+      "Basic Android Repair — components, disassembly, common faults ",
+      "Advanced Android Repair — eMMC/CPU programming, diagnostics",
+      "Complete iPhone Repair — Face ID, board-level repairs, microsoldering"
+    ]
+  },
+  "course_cards": {
+    "basic": {
+      "level": "Beginner ",
+      "title": "Android Mobile Repair - Basic ",
+      "description": "Learn Android device basics, hardware components, disassembly, soldering basics and common fault repairs from scratch. ",
+      "duration": "4 weeks ",
+      "schedule": "Full time ",
+      "eligibility_label": "Eligible:",
+      "eligibility": "10th Pass",
+      "btn_enroll": "Enroll Now "
+    },
+    "advanced_android": {
+      "level": "Advanced",
+      "title": "Advanced Android Repair",
+      "description": "Advanced chip-level repairs, eMMC/CPU programming, board tracking, software issues and advanced troubleshooting techniques.",
+      "duration": "8 Weeks ",
+      "schedule": "Full-time ",
+      "eligibility": "12th Pass ",
+      "btn_enroll": "Enroll Now"
+    },
+    "iphone": {
+      "level": "Advanced ",
+      "title": "Complete iPhone Repair ",
+      "description": "Complete training on iPhone hardware, Face ID, True Tone, baseband issues, microsoldering, and advanced chip-level repairs. ",
+      "duration": "10 weeks ",
+      "schedule": "Full time ",
+      "eligibility": "12th Pass",
+      "btn_enroll": "Enroll Now "
+    }
+  },
+  "enquiry_form": {
+    "tag": "BOOK A COURSE",
+    "title": "Start your mobile repair journey with us.",
+    "description": "Share your details and our team will guide you toward the best course for your goals.",
+    "placeholder_name": "Enter your name ",
+    "placeholder_phone": "Enter your phone number",
+    "placeholder_email": "Enter your email ",
+    "select_course_default": "Select your course ",
+    "course_options": [
+      "Basic Android Repair",
+      "Advance Android Repair",
+      "Complete iPhone Repair"
+    ],
+    "textarea_placeholder": "Write your message... ",
+    "submit_button": "Submit Enquiry ",
+    "popup": {
+      "badge": "Welcome to PMS ",
+      "title": "Prashant Mobile Solutions",
+      "body": "Explore expert mobile repair courses, get guidance, also book your first lesson with us.",
+      "cta": "Let's Begin"
+    },
+    "alerts": {
+      "success": "Enquiry is sent to your email successfully!!",
+      "failure": "Couldn't send your email, Please try again."
+    }
+  },
+  "about": {
+    "page_title": "About Prashant Mobile Solutions",
+    "hero_paragraph": "Empowering the next generation of mobile repair professionals while delivering trusted repair services with quality, precision, and care. ",
+    "our_story_heading": "Our Story ",
+    "our_story_paragraphs": [
+      "Prashant Mobile Solutions is dedicated to providing reliable mobile repair services and industry-focused training.",
+      "With years of practical experience, we help customers restore their devices and equip aspiring technicians with the skills needed to build successful careers in mobile repairing."
+    ],
+    "mission_heading": "Our Mission",
+    "mission_paragraph": "To deliver dependable repair solutions and high-quality practical training that empowers individuals with real-world technical skills.",
+    "vision_heading": "Our Vision",
+    "vision_paragraph": "To become a trusted name in mobile repairing and technical education by creating skilled professionals and providing exceptional customer service.",
+    "offer_heading": "What We Offer",
+    "offer_list": [
+      "Mobile Repair Services",
+      "Chip-level Repairing",
+      "Professional Mobile Repairing Courses",
+      "Practical Hands-on Trainings"
+    ],
+    "why_heading": "Why Choose Us?",
+    "why_list": [
+      "Experienced Trainers",
+      "Practical Learning Environment",
+      "Modern Repairing Equipments ",
+      "Affordable Fees & Services ",
+      "Customer-Centric Approach",
+      "Ongoing Student Support "
+    ],
+    "journey_heading": "Start Your Journey With Us.",
+    "journey_paragraph": "Whether you're looking for expert mobile repair services or want to build a successful career in mobile repairing, Prashant Mobile Solutions is here to guide you every step of the way."
+  },
+  "contact_page": {
+    "title": "Contact Us Page"
+  },
+  "coming_soon": {
+    "heading": "Student Portal Coming Soon ",
+    "intro": "Our dedicated portal for Students and Users is on its way.",
+    "details": "Soon you will be able to create an Account, Login securely, Access Course Material, Track your progress, And Enjoy many more features.",
+    "team_signature": "Team PMS "
+  },
+  "pages": {
+    "basic": {
+      "label": "Fundamentals of Mobile Repair",
+      "title": "Basic course ",
+      "paragraph": "Unlock the essentials of mobile servicing with hands-on training for diagnostics, component replacement, and tool mastery."
+    },
+    "advance": {
+      "label": "Advanced Repair Training",
+      "title": "Advanced course",
+      "paragraph": "Master board-level diagnostics, premium soldering techniques, and expert mobile repair workflows designed for serious technicians. "
+    },
+    "iphone": {
+      "label": "iPhone Specialist Track ",
+      "title": "Apple repair expertise ",
+      "paragraph": "Learn iPhone-specific diagnostics, screen replacements, battery servicing, and genuine component upgrades for premium devices."
+    }
+  },
+  "iphone_page_cards": {
+    "bitmap": {
+      "title": "BITMAP",
+      "description": "A bitmap is a digital image such as a photo, wallpaper, or app icon represented by pixels. Every pixel stores color information e.g., red, green, and blue values."
+    },
+    "dioda": {
+      "title": "DIODA",
+      "description": "A diode is a semiconductor device that allows electric current to flow in one direction while blocking it in the opposite direction. It helps protect the phone's circuits and ensures components receive power correctly. "
+    }
+  },
+  "services": {
+    "items": [
+      {
+        "heading": "Certified Technicians ",
+        "description": "Industry-trained & Verified experts"
+      },
+      {
+        "heading": "Genuine Spare Parts ",
+        "description": "Authentic parts for lasting long."
+      },
+      {
+        "heading": "Practical Training",
+        "description": "Hands-on learning with real devices."
+      },
+      {
+        "heading": "Transparent Pricing ",
+        "description": "No hidden charges, honest estimates."
+      }
+    ]
+  },
+  "hardware_details": {
+    "items": [
+      {
+        "key": "back_cam_superwide",
+        "heading": "BACK CAM SUPERWIDE",
+        "para": "Diagnose and repair issues related to the Super Wide rear camera. Covers power supply, signal lines, and hardware troubleshooting."
+      },
+      {
+        "key": "back_cam_telephoto",
+        "heading": "BACK CAM TELEPHOTO",
+        "para": "Complete solution for Telephoto rear camera faults. Includes circuit analysis and component-level repair guidance."
+      },
+
+      {
+        "key": "back_cam_wide",
+        "heading": "BACK CAM WIDE ",
+        "para": "Troubleshoot Wide rear camera problems such as no image, blur, or camera failure. Hardware checks with testing points included."
+      },
+
+      {
+        "key": "bb_circuit",
+        "heading": "BB CIRCUIT ",
+        "para": "Detailed Baseband circuit analysis for communication-related issues. Helps identify signal path and faulty components. "
+      },
+      {
+        "key": "charger_data",
+        "heading": "CHARGER DATA ",
+        "para": "Covers charging and USB data transfer problems. Includes charging IC, connector, and data line troubleshooting."
+      },
+
+      {
+        "key": "comp_names_swap",
+        "heading": "COMP NAME(swap board) ",
+        "para": "Lists component names and locations for board swapping. Makes identification easier during motherboard replacement."
+      },
+      {
+        "key": "comp_name",
+        "heading": "COMP NAME ",
+        "para": "Complete reference of motherboard component names and positions. Helps technicians quickly locate hardware components. "
+      },
+
+      {
+        "key": "force_dfu",
+        "heading": "FORCE DFU ",
+        "para": "Guide to forcing the device into DFU mode. Useful for software recovery and hardware diagnostics."
+      },
+      {
+        "key": "front_cam",
+        "heading": "FRONT CAM",
+        "para": "Diagnose and repair front camera issues including black screen and camera not detected. Includes circuit and voltage checks."
+      },
+
+      {
+        "key": "front_cam_ip",
+        "heading": "FRONT CAM IP ",
+        "para": "Solutions for Front IR camera faults affecting Face ID or IR sensing. Covers component testing and repair procedures."
+      },
+      {
+        "key": "lcd",
+        "heading": "LCD ",
+        "para": "Complete LCD display troubleshooting guide. Resolves display, touch, backlight, and screen-related hardware issues."
+      },
+
+      {
+        "key": "mic_spk_ear",
+        "heading": "MIC SPK EAR ",
+        "para": "Diagnose microphone, speaker, and earpiece problems. Includes audio circuit testing and component replacement guidance."
+      },
+      {
+        "key": "network",
+        "heading": "NETWORK",
+        "para": "Hardware solutions for network and signal issues. Covers RF circuits, antennas, and connectivity troubleshooting."
+      },
+      {
+        "key": "on_off",
+        "heading": "ON OFF",
+        "para": "Repair guide for Power and Volume button faults. Includes switch circuits, flex cable, and voltage testing."
+      },
+      {
+        "key": "sim_card",
+        "heading": "SIM CARD ",
+        "para": "Troubleshoot SIM detection and network registration issues. Covers SIM slot, filters, and signal path analysis."
+      },
+      {
+        "key": "test_point_rffe",
+        "heading": "TEST POINT RFFE ",
+        "para": "Reference for RF Front-End (RFFE) test points. Helps technicians measure voltages and diagnose RF hardware faults."
+      },
+      {
+        "key": "touch_screen",
+        "heading": "TOUCH SCREEN ",
+        "para": "Diagnose touchscreen responsiveness and touch failure issues. Includes touch IC, connector, and circuit troubleshooting."
+      },
+      {
+        "key": "wifi_bt_gps",
+        "heading": "WIFI BT GPS",
+        "para": "Hardware repair guide for Wi-Fi, Bluetooth, and GPS connectivity problems. Covers antenna circuits, ICs, and signal testing."
+      }
+    ]
+  },
+  "gallery_component": {
+    "title": "Gallery ",
+    "img_alt": ["image 1", "image 2", "image 3", "image 4"]
+  },
+  "other": {
+    "card_swap_default_alt": "card",
+    "generic_close": "Close ",
+    "popup_close_x": "x"
+  }
 }
