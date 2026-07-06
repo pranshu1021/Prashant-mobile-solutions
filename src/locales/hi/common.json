@@ -71,6 +71,7 @@
 "description": "चिप-लेवल मरम्मत और एडवांस्ड ट्रबलशूटिंग।",
 "duration": "8 सप्ताह",
 "schedule": "फुल-टाइम",
+"eligibility_label": " पात्रता:",
 "eligibility": "12वीं उत्तीर्ण",
 "btn_enroll": "नाम दर्ज करें"
 },
@@ -80,6 +81,7 @@
 "description": "iPhone हार्डवेयर और माइक्रो-सोल्डरिंग प्रशिक्षण।",
 "duration": "10 सप्ताह",
 "schedule": "फुल-टाइम",
+"eligibility_label": " पात्रता:",
 "eligibility": "12वीं उत्तीर्ण",
 "btn_enroll": "नाम दर्ज करें"
 }
