@@ -1,8 +1,8 @@
 .Hardware-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    padding: 0.75rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(180px, 80vw, 220px), 1fr));
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    padding: clamp(0.5rem, 1.5vw, 0.75rem) 0;
     align-items: start;
     grid-auto-rows: minmax(min-content, max-content);
 }

@@ -1,7 +1,7 @@
 .Courses-container {
-    margin-bottom: 50px;
-    margin-top: 120px;
-    padding: 2rem 1.5rem 3rem;
+    margin-bottom: clamp(30px, 5vw, 50px);
+    margin-top: clamp(80px, 15vw, 120px);
+    padding: clamp(1.2rem, 3vw, 2rem) clamp(1rem, 3vw, 1.5rem) clamp(2rem, 4vw, 3rem);
     background: linear-gradient(180deg, rgba(244, 248, 255, 0.9), rgba(243, 246, 255, 0.6));
 }
 
@@ -9,13 +9,13 @@
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
-    gap: 2.5rem;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.96);
-    border-radius: 36px;
-    padding: 2rem;
+    border-radius: clamp(20px, 5vw, 36px);
+    padding: clamp(1.2rem, 3vw, 2rem);
     box-shadow: 0 32px 90px rgba(15, 23, 42, 0.08);
 }
 
@@ -28,23 +28,24 @@
 }
 
 .courses-left h1 {
-    margin: 0 0 0.75rem 0;
-    font-size: clamp(2rem, 3vw, 3rem);
+    margin: 0 0 clamp(0.5rem, 1.5vw, 0.75rem) 0;
+    font-size: clamp(1.6rem, 5vw, 3rem);
     line-height: 1.05;
 }
 
 .courses-left h3 {
-    margin: 0 0 1.15rem 0;
+    margin: 0 0 clamp(0.8rem, 2vw, 1.15rem) 0;
     color: #445382;
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
     line-height: 1.5;
 }
 
 .courses-left p {
     color: #3b4a5a;
-    line-height: 1.85;
+    line-height: 1.8;
     max-width: 680px;
-    margin-bottom: 1.25rem;
+    margin-bottom: clamp(0.8rem, 2vw, 1.25rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .courses-left ul {
@@ -104,14 +105,14 @@
 
 @media (max-width: 1024px) {
     .Courses-container {
-        margin-top: 130px;
+        margin-top: clamp(100px, 12vw, 130px);
     }
 }
 
 @media (max-width: 880px) {
     .Courses-content {
         flex-direction: column-reverse;
-        gap: 1.75rem;
+        gap: clamp(1rem, 3vw, 1.75rem);
     }
 
     .courses-right {
@@ -120,41 +121,47 @@
 
     .courses-left {
         width: 100%;
-        padding: 1.8rem;
+        padding: clamp(1rem, 3vw, 1.8rem);
         background: rgba(255, 255, 255, 0.96);
     }
 
     .courses-swap-holder {
-        min-height: 420px;
-        padding: 1.4rem;
+        min-height: clamp(300px, 60vh, 420px);
+        padding: clamp(1rem, 2.5vw, 1.4rem);
     }
 }
 
 @media (max-width: 680px) {
     .Courses-container {
-        margin-top: 120px;
-        padding: 0 1rem 2.5rem;
+        margin-top: clamp(80px, 12vw, 120px);
+        padding: clamp(0.8rem, 2.5vw, 1rem) clamp(0.8rem, 2vw, 1rem) clamp(1.8rem, 4vw, 2.5rem);
     }
 
     .courses-content {
-        gap: 1.3rem;
+        gap: clamp(1rem, 2.5vw, 1.3rem);
+        padding: clamp(1rem, 2.5vw, 1.5rem);
     }
 
     .courses-left {
-        padding: 1.6rem;
-        border-radius: 24px;
+        padding: clamp(1rem, 2.5vw, 1.6rem);
+        border-radius: clamp(16px, 4vw, 24px);
     }
 
     .courses-left h1 {
-        font-size: 2.2rem;
+        font-size: clamp(1.4rem, 4.5vw, 2.2rem);
     }
 
     .courses-left h3 {
-        font-size: 1.05rem;
+        font-size: clamp(0.95rem, 2.2vw, 1.05rem);
     }
 
     .courses-left ul {
-        padding-left: 1.1rem;
+        padding-left: clamp(0.9rem, 2vw, 1.1rem);
+        font-size: clamp(0.9rem, 1.8vw, 1rem);
+    }
+
+    .courses-left ul li {
+        margin-bottom: clamp(0.6rem, 1.5vw, 0.9rem);
     }
 
     .courses-right > div {
@@ -164,17 +171,18 @@
 
 @media (max-width: 520px) {
     .Courses-container {
-        margin-top: 100px;
-        padding: 0 0.8rem 1.8rem;
+        margin-top: clamp(70px, 10vw, 100px);
+        padding: clamp(0.6rem, 2vw, 0.8rem) clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.4rem, 3vw, 1.8rem);
     }
 
     .courses-content {
-        padding: 1.5rem 1rem;
+        padding: clamp(1rem, 2vw, 1.5rem);
+        gap: clamp(0.8rem, 2vw, 1.3rem);
     }
 
     .courses-left {
-        padding: 1.2rem;
-        border-radius: 20px;
+        padding: clamp(0.9rem, 2vw, 1.2rem);
+        border-radius: clamp(14px, 3vw, 20px);
     }
 
     .courses-right {
@@ -182,20 +190,21 @@
     }
 
     .courses-swap-holder {
-        min-height: 360px;
-        padding: 1.1rem;
+        min-height: clamp(250px, 50vh, 360px);
+        padding: clamp(0.8rem, 2vw, 1.1rem);
+        border-radius: clamp(16px, 4vw, 32px);
     }
 
     .courses-left h1 {
-        font-size: 1.85rem;
+        font-size: clamp(1.3rem, 4vw, 1.85rem);
     }
 
     .courses-left p,
     .courses-left ul {
-        font-size: 0.95rem;
+        font-size: clamp(0.85rem, 1.8vw, 0.95rem);
     }
 
     .courses-left ul li {
-        margin-bottom: 0.75rem;
+        margin-bottom: clamp(0.5rem, 1.2vw, 0.75rem);
     }
 }

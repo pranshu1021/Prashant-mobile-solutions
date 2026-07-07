@@ -1,15 +1,14 @@
 .Comingsooncontainer {
     text-align: center;
-    margin-top: 150px;
-   
+    margin-top: clamp(80px, 15vw, 150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:500px;
+    min-height: clamp(350px, 80vh, 500px);
     width:100%;
-    font-size:30px;
-    
+    font-size: clamp(1.5rem, 5vw, 30px);
+    padding: clamp(20px, 3vw, 40px);
 }
 .Comingsooncontent{
  

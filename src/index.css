@@ -1,18 +1,139 @@
-:root{
+:root {
 	--bg: #ffffff;
 	--text: #111827;
 	--accent: #0ea5a4;
 	--muted: #6b7280;
+	--transition: all 0.3s ease;
 }
 
-*{box-sizing:border-box}
-html,body,#root{height:100%}
-body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--text);}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-.primary-btn{background:var(--accent);color:#fff;border:none;padding:0.6rem 1rem;border-radius:6px;cursor:pointer}
-.secondary-btn{background:transparent;color:var(--accent);border:2px solid var(--accent);padding:0.5rem 0.9rem;border-radius:6px;cursor:pointer}
+html, body, #root {
+	height: 100%;
+	width: 100%;
+}
 
-.enroll-butn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer}
+body {
+	margin: 0;
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background: var(--bg);
+	color: var(--text);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
-img{max-width:100%;height:auto;display:block}
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	word-wrap: break-word;
+}
+
+/* Responsive Images */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Buttons - Mobile First */
+.primary-btn, .secondary-btn, .enroll-butn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	font-size: clamp(0.875rem, 2vw, 1rem);
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition);
+	white-space: nowrap;
+	border: none;
+	text-decoration: none;
+	tap-highlight-color: transparent;
+}
+
+.primary-btn {
+	background: var(--accent);
+	color: #fff;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+	filter: brightness(0.9);
+	transform: translateY(-2px);
+}
+
+.secondary-btn {
+	background: transparent;
+	color: var(--accent);
+	border: 2px solid var(--accent);
+	padding: calc(0.75rem - 2px) calc(1.5rem - 2px);
+}
+
+.secondary-btn:hover,
+.secondary-btn:active {
+	background: var(--accent);
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.enroll-butn {
+	background: var(--accent);
+	color: #fff;
+}
+
+.enroll-butn:hover,
+.enroll-butn:active {
+	filter: brightness(0.9);
+	transform: translateY(-2px);
+}
+
+/* Mobile Touch Friendly */
+button, a[role="button"] {
+	min-height: 44px;
+	min-width: 44px;
+}
+
+/* Responsive Video/Iframe */
+iframe {
+	max-width: 100%;
+}
+
+/* Utility for preventing overflow */
+.container-responsive {
+	width: 100%;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.primary-btn,
+	.secondary-btn,
+	.enroll-butn {
+		padding: 0.625rem 1.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 13px;
+	}
+
+	.primary-btn,
+	.secondary-btn,
+	.enroll-butn {
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+	}
+}
 
