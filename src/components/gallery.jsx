@@ -1,5 +1,5 @@
 import "./Navbar.jsx"
-import "./Gallery.css"
+import "./gallery.css"
  function Gallery () {
     return (
 <div className="Gallery">
