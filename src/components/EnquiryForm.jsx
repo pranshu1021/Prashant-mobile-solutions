@@ -12,10 +12,10 @@ export default function EnquiryForm(){
         message:"",
     });
 
-    const [showPopup,setShowPopup] = useState(false);
+    //const [showPopup,setShowPopup] = useState(false);
     
     useEffect(()=>{
-        setShowPopup(true);
+         //setShowPopup(true);
         
         emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     },[])
@@ -95,7 +95,7 @@ export default function EnquiryForm(){
             </form>
         </div>
 
-        {showPopup && (
+        {/* /*{showPopup && (
             <div className="popup-overlay">
                 <div className="popup-box">
                     <button className="popup-close" onClick={()=> setShowPopup(false)}>
@@ -109,6 +109,6 @@ export default function EnquiryForm(){
                     </button>
                 </div>
             </div>
-        )}
+        )} */}
     </section>)
 }
