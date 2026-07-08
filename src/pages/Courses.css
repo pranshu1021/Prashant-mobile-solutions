@@ -107,6 +107,9 @@
     .Courses-container {
         margin-top: clamp(100px, 12vw, 130px);
     }
+    .courses-right{
+        display: none;
+    }
 }
 
 @media (max-width: 880px) {
