@@ -93,25 +93,25 @@ img {
 	transform: translateY(-2px);
 }
 
-/* Mobile Touch Friendly */
+
 button, a[role="button"] {
 	min-height: 44px;
 	min-width: 44px;
 }
 
-/* Responsive Video/Iframe */
+
 iframe {
 	max-width: 100%;
 }
 
-/* Utility for preventing overflow */
+
 .container-responsive {
 	width: 100%;
 	padding: 0 1rem;
 	margin: 0 auto;
 }
 
-/* Responsive spacing */
+
 @media (max-width: 768px) {
 	body {
 		font-size: 14px;

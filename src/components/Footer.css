@@ -159,6 +159,7 @@ hr {
         align-items: center;
         text-align: center;
         min-width: 0;
+
     }
 
     .about img {
@@ -188,6 +189,7 @@ hr {
         text-align: center;
         align-items: center;
         min-width: 0;
+            flex: 1 1 10px;
     }
 
     .footer-main {

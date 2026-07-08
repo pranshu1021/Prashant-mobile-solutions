@@ -92,8 +92,8 @@ export default function TiltedCard({
       <motion.div
         className="tilted-card-inner"
         style={{
-          width: imageWidth,
-          height: imageHeight,
+          width: "100%",
+          height: "100%",
           rotateX,
           rotateY,
           scale

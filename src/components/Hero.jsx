@@ -25,7 +25,7 @@ function Hero (){
   
   captionText="PMS"
   containerHeight="500px"
-  containerWidth="300px"
+  containerWidth="100%"
   imageHeight="500px"
   imageWidth="700px"
   rotateAmplitude={12}

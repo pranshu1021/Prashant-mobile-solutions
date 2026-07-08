@@ -1,5 +1,5 @@
 .Services-container {
-    overflow: auto;
+    overflow:hidden;
     padding: clamp(24px, 5vw, 42px) clamp(12px, 3vw, 20px) clamp(30px, 5vw, 35px);
     background-color: #f7f9fd;
 }
