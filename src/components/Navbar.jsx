@@ -38,10 +38,10 @@ function Navbar() {
                             <Link to="/courses" onClick={() => setMenuOpen(false)}>{t("navbar.courses")}</Link>
 
                             <div>
-                                <button onClick={()=> i18n.changeLanguage("en")}>
+                                <button className="translation-en" onClick={()=> i18n.changeLanguage("en")}>
                                     English
                                 </button>
-                                <button onClick={()=> i18n.changeLanguage("hi")}>
+                                <button className="translation-hi" onClick={()=> i18n.changeLanguage("hi")}>
                                     {t("navbar.language_hindi")}
                                 </button>
                             </div>

@@ -171,6 +171,17 @@
 .nav-buttons a:hover {
     transform: translateY(1px) scale(1.03);
 }
+.translation-en, .translation-hi{
+background-color:#2f428e;
+gap:5px;
+margin:5px;
+color:white;
+padding:10px;
+border:none;
+width:70px;
+border-radius:999px;
+}
+
 
 @media (max-width: 920px) {
     .nav-container {
@@ -244,6 +255,7 @@
     main {
         padding-top: 90px;
     }
+
 }
 
 @media (max-width: 640px) {
