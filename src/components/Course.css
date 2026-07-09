@@ -10,9 +10,9 @@
   --text: #0f172a;
   --muted: #475569;
 
-  --blue: #3b82f6;
-  --green: #22c55e;
-  --purple: #a855f7;
+  --blue: #445382;
+  --green: #445382;
+  --purple: #445382;
 
   --shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
 }
@@ -89,15 +89,15 @@
 }
 
 .Mobile-card.blue::before {
-  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  background: linear-gradient(90deg, #445382, #445382);
 }
 
 .Mobile-card.green::before {
-  background: linear-gradient(90deg, #22c55e, #16a34a);
+  background: linear-gradient(90deg, #445382, #445382);
 }
 
 .Mobile-card.purple::before {
-  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  background: linear-gradient(90deg, #445382, #445382);
 }
 
 /* ===========================
@@ -129,17 +129,17 @@
   font-weight: bold;
 
   background: rgba(59, 130, 246, 0.12);
-  color: #1d4ed8;
+  color: #445382;
 }
 
 .Mobile-card.green .image span {
   background: rgba(34, 197, 94, 0.12);
-  color: #166534;
+  color: #445382;
 }
 
 .Mobile-card.purple .image span {
   background: rgba(168, 85, 247, 0.16);
-  color: #7c3aed;
+  color: #445382;
 }
 
 /* ===========================
@@ -205,7 +205,7 @@
   border-radius: 999px;
 
   background: rgba(34, 197, 94, 0.11);
-  color: #15803d;
+  color: #445382;
   font-weight: bold;
 }
 
@@ -228,7 +228,7 @@
   color: white;
   text-decoration: none;
 
-  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  background: linear-gradient(90deg, #445382, #445382);
 
   cursor: pointer;
   transition: 0.22s ease;
@@ -240,11 +240,11 @@
 }
 
 .enroll-butn.second {
-  background: linear-gradient(90deg, #22c55e, #16a34a);
+  background: linear-gradient(90deg, #445382, #445382);
 }
 
 .enroll-butn.third {
-  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  background: linear-gradient(90deg, #445382, #445382);
 }
 
 /* ===========================

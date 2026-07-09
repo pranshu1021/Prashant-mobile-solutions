@@ -121,12 +121,12 @@
     bottom: -6px;
     width: 0;
     height: 2px;
-    background: blue;
+    background: #445382;
     transition: width 0.3s ease;
 }
 
 .nav_links a:hover {
-    color: blue;
+    color: #445382;
 }
 
 .nav_links a:hover::after {
