@@ -132,6 +132,10 @@ hr {
     font-size: 14px;
 }
 
+
+.credit-company{
+    font-weight:500;
+}
 @media (max-width: 1024px) {
     footer.footer {
         padding: clamp(25px, 5vw, 42px) clamp(14px, 3vw, 18px);
@@ -244,4 +248,5 @@ hr {
     .copyright-section {
         font-size: 12px;
     }
+
 }

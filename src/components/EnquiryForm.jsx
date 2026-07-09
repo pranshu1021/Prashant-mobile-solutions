@@ -87,7 +87,7 @@ export default function EnquiryForm(){
                     <option value="">{t("enquiry_form.select_course_default")}</option>
                     <option value="Basic Android Repair">{t("enquiry_form.course_options.0")}</option>
                     <option value="Advance Android Repair">{t("enquiry_form.course_options.1")}</option>
-                    <option value="Complete iPhone Repair">{t("enquiry_form.course_option.2")}</option>
+                    <option value="Complete iPhone Repair">{t("enquiry_form.course_options.2")}</option>
                 </select>
 
                 <textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("enquiry_form.textarea_placeholder")}/>

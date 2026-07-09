@@ -25,7 +25,7 @@ function Footer (){
                 </div>
                 <div className="email-container">
                     <h4><MdEmail aria-hidden="true"/>{t("footer.email_label")}</h4>
-                    <p>teampms@gmail.com</p>
+                    <p>teamprashantmobilesolutions@gmail.com</p>
                 </div>
                 <div className="location-container">
                     <h4><FaLocationDot aria-hidden="true"/>{t("footer.location_label")}</h4>
@@ -70,6 +70,7 @@ function Footer (){
                 <div className="copyright-section">
                     <MdCopyright aria-hidden="true" />
                     <p>{t("footer.copyright")}</p>
+                    <p className="credits"> |   Designed and Developed by <span className="credit-company">TheFineWorks</span></p>
                 </div>
             </div>
         </footer>
