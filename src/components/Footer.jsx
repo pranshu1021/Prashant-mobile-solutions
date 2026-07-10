@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 
 
 
+
 function Footer (){
     const {t}=useTranslation();
     return(
@@ -57,9 +58,9 @@ function Footer (){
                     <div className="policies">
                         <h3>{t("footer.policies_heading")}</h3>
                         <ul>
-                            <li>{t("footer.policies.privacy")}</li>
-                            <li>{t("footer.policies.cookie")}</li>
-                            <li>{t("footer.policies.terms")}</li>
+                          <Link to ="/privacy_policies"><li>{t("footer.policies.privacy")}</li></Link>
+                          <Link to = "/cookiepolicy"> <li>{t("footer.policies.cookie")}</li></Link>
+                            <Link to = "/termsofuse"><li>{t("footer.policies.terms")}</li></Link>
                         </ul>
                     </div>
                 </div>

@@ -12,6 +12,9 @@ import AdvanceTopic from './components/AdvanceTopic'
 import IPhonepage from './components/IPhonepage'
 import Comingsoon from './components/Comingsoon'
 import Courses from './pages/Courses'
+import Privacypolicy from './components/Privacypolicy'
+import Termsofuse from './components/Termsofuse'
+import Cookiepolicy from './components/Cookiepolicy'
 function App() {
   return (
     
@@ -27,6 +30,9 @@ function App() {
   <Route path = "/advancetopic" element = {<AdvanceTopic/>}/>
   <Route path = "/comingsoonpage" element = {<Comingsoon/>}/>
   <Route path = "/courses" element = {<Courses/>}/>
+  <Route path = "/privacy_policies" element={<Privacypolicy/>}/>
+  <Route path = "/termsofuse" element={<Termsofuse/>}/>
+  <Route path = "/cookiepolicy" element={<Cookiepolicy/>}/>
 </Routes>
     
   )
